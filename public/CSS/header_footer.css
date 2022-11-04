@@ -41,7 +41,6 @@ body {
     text-decoration: none;
     color: black;
 }
-
 /*Parte del Footer*/
 .capa-footer1 {
     background-color: #5A5D5D;
@@ -50,11 +49,11 @@ body {
 .capa-footer1 h3 {
     color: white;
 }
-.capa-redes, .capa-info {
+.footer-redes, .footer-info {
     width: 50%;
     text-align: center;
 }
-.capa-info p { /*Parrafo de informacion sobre la compañia*/
+.footer-info p { /*Parrafo de informacion sobre la compañia*/
     width: 50%;
     padding-left: 230px;
     font-family: 'Roboto', sans-serif;

@@ -1,0 +1,213 @@
+div {
+    box-sizing: border-box;
+}
+body {
+    margin: 0%;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Header*/
+.capa-banner {
+    background-image: url(../Media/fondo_logo.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    text-align: center;
+}
+
+/*Contenido*/
+/*Info empresa*/
+.capa-info {
+    padding-bottom: 5%;
+}
+.capa-frase h1 {
+    text-align: center;
+    width: 30%;
+    position: relative;
+    left: 42%;
+    color: #082D73;
+    font-family: 'Ethnocentric Rg', sans-serif;
+                                                
+}
+.info-empresa, .foto-empresa {
+    width: 50%;
+}
+.info-empresa {
+    text-align: center;
+    padding-top: 9%;
+}
+.info-empresa h1 {
+    color: #EC8211;
+    font-family: 'Ethnocentric Rg', sans-serif;
+                                                
+}
+.info-empresa p {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #082D73;
+    font-family: 'Roboto', sans-serif;
+}
+.foto-empresa {
+    text-align: center;
+}
+.foto-empresa img {
+    width: auto;
+    height: 550px;
+}
+
+/*Productos empresa*/
+.nombre-producto {
+    text-align: center;
+    background-color: #C1C1C1;
+}
+.nombre-producto img {
+    height: auto;
+    width: 30%;
+}
+.fondo-powerbyte {
+    background-image: url(../Media/producto.png);
+    height: 115%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondo-powerbyte button {
+    position: relative;
+    left: 18%;  
+    padding-left: 40px;  
+    padding-right: 40px;  
+    background-color: #EC8211;
+    color: white;
+    border-width: 0px;
+    top: 60%;
+}
+
+/*Mision, Vision, Valores*/
+.capa-estrategias {
+    background-color: #C1C1C1;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.estrategias-img, .estrategias2-img{
+    width: 30%;
+}
+.estrategias-img {
+    padding-left: 15%;
+}
+.estrategias2-img {
+    padding-left: 3%;
+}
+.estrategias-txt, .estrategias2-txt{
+    width: 70%;
+    color: white;
+}
+.estrategias-txt p, .estrategias2-txt p{
+    font-family: 'Roboto', sans-serif;
+}
+.estrategias-txt h2, .estrategias2-txt h2{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.estrategias-txt {
+    padding-right: 32%;
+    text-align: start;
+}
+.estrategias2-txt {
+    padding-left: 30%;
+    padding-right: 2%;
+    text-align: end;
+}
+
+/*Nuestro equipo*/
+.capa-equipo {
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.capa-equipo h1{
+    font-family: 'Ethnocentric Rg', sans-serif;
+    color: #EC8211;
+    text-align: center;
+}
+.equipo-sofia, .equipo-michael, .equipo-diego, .equipo-rodrigo {
+    width: 25%;
+    text-align: center;
+    padding-top: 2%;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.equipo-sofia p, .equipo-michael p, .equipo-diego p, .equipo-rodrigo p {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Parte del Footer*/
+.capa-footer1 {
+    background-color: #5A5D5D;
+    padding-bottom: 20px;
+}
+.capa-footer1 h3 {
+    color: white;
+}
+.footer-redes, .footer-info {
+    width: 50%;
+    text-align: center;
+}
+.footer-info p { /*Parrafo de informacion sobre la compañia*/
+    width: 50%;
+    padding-left: 230px;
+    font-family: 'Roboto', sans-serif;
+}
+.lado-imagenes, .nombre-red { /*Para imagenes y nombres de redes sociales*/
+    padding-bottom: 10px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+.lado-imagenes {
+    text-align: end;
+}
+.redes-img {
+    width: 7%;
+    text-align: end;
+    padding-right: 6px;
+}
+.nombre-red {
+    text-align: start;
+    padding-top: 5px;
+}
+.nombre-red a{
+    text-decoration: none;
+    color: black;
+}
+
+/*CSS para la parte del copyright*/
+.capa-footer2 {
+    background-color: #4E4B4C;
+}
+.copyright, .sobre-nosotros {
+    width: 50%;
+}
+.img-copyright {
+    width: 25%;
+    text-align: end;
+}
+.img-copyright img{
+    width: 9%;
+    padding-top: 14px;
+    padding-right: 5px;
+}
+.texto-copyright {
+    width: 75%;
+}
+.sobre-nosotros {
+    padding-top: 13px;
+    text-align: center;
+}
+.sobre-nosotros a{
+    text-decoration: none;
+    color: black;
+}
+.contenido {
+    padding-top: 300px;
+}
