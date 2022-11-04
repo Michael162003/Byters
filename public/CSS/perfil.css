@@ -1,0 +1,170 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Header*/
+.header-logo,
+.header-perfil {
+    width: 50%;
+    background-color: #4E4B4C;
+}
+
+.header-logo img {
+    width: 160px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.header-perfil img {
+    width: 62px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.header-perfil {
+    text-align: end;
+}
+
+/*perfil*/
+.capa-perfil {
+    padding-top: 5%;
+}
+.foto-perfil,
+.info-perfil {
+    width: 50%;
+}
+.foto-perfil img {
+    width: inherit;
+    padding-left: 30%;
+}
+.info-perfil {
+    padding-top: 2%;
+    padding-left: 8%;
+}
+.info-perfil h2{
+    padding-bottom: 2%;
+}
+
+/*grafico*/
+.capa-grafico {
+    text-align: center;
+    padding-top: 6%;
+}
+.foto-grafico {
+}
+.foto-grafico img {
+    padding-top: 1%;
+    height: 80%;
+}
+
+/*Navbar Menu*/
+.capa-navbar {
+    background-color: #FFC34E;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.capa-navbar a {
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/*Parte del Footer*/
+.capa-footer1 {
+    background-color: #5A5D5D;
+    padding-bottom: 20px;
+}
+
+.capa-footer1 h3 {
+    color: white;
+}
+
+.footer-redes,
+.footer-info {
+    width: 50%;
+    text-align: center;
+}
+
+.footer-info p {
+    /*Parrafo de informacion sobre la compañia*/
+    width: 50%;
+    padding-left: 230px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lado-imagenes,
+.nombre-red {
+    /*Para imagenes y nombres de redes sociales*/
+    padding-bottom: 10px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lado-imagenes {
+    text-align: end;
+}
+
+.redes-img {
+    width: 7%;
+    text-align: end;
+    padding-right: 6px;
+}
+
+.nombre-red {
+    text-align: start;
+    padding-top: 5px;
+}
+
+.nombre-red a {
+    text-decoration: none;
+    color: black;
+}
+
+/*CSS para la parte del copyright*/
+.capa-footer2 {
+    background-color: #4E4B4C;
+}
+.copyright,
+.sobre-nosotros {
+    width: 50%;
+}
+
+.img-copyright {
+    width: 25%;
+    text-align: end;
+}
+
+.img-copyright img {
+    width: 9%;
+    padding-top: 14px;
+    padding-right: 5px;
+}
+.texto-copyright {
+    width: 75%;
+}
+
+.sobre-nosotros {
+    padding-top: 13px;
+    text-align: center;
+}
+
+.sobre-nosotros a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenido {
+    padding-top: 300px;
+}
