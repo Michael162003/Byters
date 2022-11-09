@@ -59,11 +59,47 @@ body {
     text-align: center;
     padding-top: 6%;
 }
-.foto-grafico {
-}
+
 .foto-grafico img {
-    padding-top: 1%;
-    height: 80%;
+    width: 40%;
+}
+
+/*Agua*/
+.capa-agua {
+    padding-top: 4%;
+    text-align: center;
+}
+.h1-agua {
+    padding-top: 3%;
+    width: 20%;
+    text-align: right;
+}
+.w-agua {
+    width: 20%;
+}
+
+/*Logros*/
+.capa-logros {
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+.capa-lpendientes {
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+.capa-logros button {
+    background-color: #FFC34E;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+.w-logros {
+    width: 25%;
 }
 
 /*Navbar Menu*/
