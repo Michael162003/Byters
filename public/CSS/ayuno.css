@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Header*/
+.header-logo,
+.header-perfil {
+    width: 50%;
+    background-color: #4E4B4C;
+}
+
+.header-logo img {
+    width: 17%;
+    padding-left: 3%;
+    padding-bottom: 1%;
+}
+
+.header-perfil img {
+    width: 6%;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.header-perfil {
+    text-align: end;
+}
+
+/*Navbar Menu*/
+.capa-navbar {
+    background-color: #FFC34E;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.capa-navbar a {
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/*Contenido*/
+.titulo1{
+    text-align: center;
+    font-family: 'Quattrocento', serif;
+    padding-bottom: 60px;
+}
+
+.ventajaAyuno{
+    display: flex;
+    padding-right: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ventajas{
+    font-family: 'Roboto', sans-serif;
+}
+.ventajas h1 {
+    font-family: 'Quattrocento', serif;
+}
+.ayuno, .ventajas {
+    width: 50%;
+}
+.ayuno {
+    text-align: center;
+}
+
+.ayuno{
+    padding-right: 50px;
+    padding-left: 40px;
+}
+
+.titulo2{
+    text-align: center;
+    font-family: 'Quattrocento', serif;
+    padding-top: 50px;
+}
+
+.metrica{
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 4%;
+}
+.ayuno14, .ayuno16, .ayuno18, .ayuno20 {
+    width: 25%;
+    text-align: center;
+}
+.ayuno14 p, .ayuno16 p, .ayuno18 p, .ayuno20 P {
+    text-align: justify;
+}
+.ayuno14{
+    padding-right: 2%;
+    height: min-content;
+    padding-left: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.ayuno16{
+    padding-right: 2%;
+    height: min-content;
+    font-family: 'Roboto', sans-serif;
+}
+.ayuno18{
+    padding-right: 2%;
+    height: min-content;
+    font-family: 'Roboto', sans-serif;
+}
+.ayuno20{
+    padding-right: 2%;
+    height: min-content;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Parte del Footer*/
+.capa-footer1 {
+    background-color: #5A5D5D;
+    padding-bottom: 20px;
+}
+.capa-footer1 h3 {
+    color: white;
+}
+.footer-redes, .footer-info {
+    width: 50%;
+    text-align: center;
+}
+.footer-info p { /*Parrafo de informacion sobre la compañia*/
+    width: 50%;
+    padding-left: 230px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+.lado-imagenes, .nombre-red { /*Para imagenes y nombres de redes sociales*/
+    padding-bottom: 10px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+.lado-imagenes {
+    text-align: end;
+}
+.redes-img {
+    width: 7%;
+    text-align: end;
+    padding-right: 6px;
+}
+.nombre-red {
+    text-align: start;
+    padding-top: 5px;
+}
+.nombre-red a{
+    text-decoration: none;
+    color: white;
+}
+
+/*CSS para la parte del copyright*/
+.capa-footer2 {
+    background-color: #4E4B4C;
+}
+.copyright, .sobre-nosotros {
+    width: 50%;
+}
+.img-copyright {
+    width: 25%;
+    text-align: end;
+}
+.img-copyright img{
+    width: 9%;
+    padding-top: 14px;
+    padding-right: 5px;
+}
+.texto-copyright {
+    width: 75%;
+    color: white;
+}
+.sobre-nosotros {
+    padding-top: 13px;
+    text-align: center;
+}
+.sobre-nosotros a{
+    text-decoration: none;
+    color: white;
+}
+.contenido {
+    padding-top: 300px;
+}
