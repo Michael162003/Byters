@@ -19,19 +19,34 @@ body {
 }
 
 .header-logo img {
-    width: 160px;
-    padding-left: 30px;
-    padding-bottom: 5px;
+    width: 17%;
+    padding-left: 3%;
+    padding-bottom: 1%;
 }
 
 .header-perfil img {
-    width: 62px;
+    width: 6%;
     padding-top: 10px;
     padding-right: 20px;
 }
 
 .header-perfil {
     text-align: end;
+}
+
+/*Navbar Menu*/
+.capa-navbar {
+    background-color: #FFC34E;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.capa-navbar a {
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 /*perfil*/
@@ -102,20 +117,6 @@ body {
     width: 25%;
 }
 
-/*Navbar Menu*/
-.capa-navbar {
-    background-color: #FFC34E;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.capa-navbar a {
-    width: 25%;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
 
 /*Parte del Footer*/
 .capa-footer1 {
