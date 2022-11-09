@@ -1,46 +1,57 @@
-body{
+body {
     margin: 0%;
 }
+
 div {
     box-sizing: border-box;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
 /*Header*/
-.capa-logo, .capa-botones {
+.capa-logo,
+.capa-botones {
     width: 50%;
 }
+
 .capa-logo img {
     width: 17%;
     padding-left: 3%;
     padding-bottom: 1%;
 }
+
 .inicio img {
     width: 21%;
+
 }
+
 .registrar img {
     width: 45%;
     padding-left: 3%;
 }
+
 .inicio {
     text-align: right;
     width: 70%;
 }
+
 .capa-botones {
     padding-top: 0%;
 }
+
 .registrar {
-    width: 30%;    
+    width: 30%;
 }
+
 .header {
     background-color: #4E4B4C;
 }
 
 /*Banner*/
-.imagen{   
+.imagen {
     height: 80%;
     background-image: url(../Media/Fondo_page.jpg);
     background-size: cover;
@@ -48,17 +59,19 @@ div {
     background-attachment: fixed;
     text-align: center;
 }
-.imagen p{
+
+.imagen p {
     font-family: 'Quattrocento Sans', sans-serif;
     color: #fff;
     text-shadow: 0px 0px 6px #000000;
     font-size: 20px;
 }
-.imagen h1{
+
+.imagen h1 {
     font-family: 'Ethnocentric Rg', sans-serif;
     padding-top: 12%;
     margin-top: 0%;
-    color:#F69D24;
+    color: #F69D24;
     font-size: 60px;
     text-shadow: 0px 2px 7px black;
 }
@@ -67,86 +80,120 @@ div {
 .contenido-apli {
     padding-top: 4%;
 }
-.ejer h2, .receta h2, .calendario h2, .historial h2, .logros h2 {
+
+.ejer h2,
+.receta h2,
+.calendario h2,
+.historial h2,
+.logros h2 {
     font-family: 'Quattrocento Sans', sans-serif;
 }
-.ejer p, .receta p, .calendario p, .historial p, .logros p {
+
+.ejer p,
+.receta p,
+.calendario p,
+.historial p,
+.logros p {
     font-family: 'Roboto', sans-serif;
 }
-.ejer, .receta, .calendario {
+
+.ejer,
+.receta,
+.calendario {
     width: 33.3%;
     text-align: center;
 }
-.ejer img{
+
+.ejer img {
     width: 60%;
 }
+
 .receta img {
     width: 58.7%;
 }
-.historial{
+
+.historial {
     text-align: center;
     padding-left: 15%;
 }
+
 .logros p {
     padding-left: 12%;
     padding-right: 12%;
 }
-.logros{
+
+.logros {
     text-align: center;
     padding-right: 17%;
 }
-.historial, .logros {
+
+.historial,
+.logros {
     width: 50%;
 }
 
 .historial img {
     width: 50%;
 }
+
 .logros img {
     width: 30%;
 }
-.historial p, .receta p, .calendario p  {
+
+.historial p,
+.receta p,
+.calendario p {
     padding-left: 10%;
     padding-right: 12%;
 }
-.ejer p{
+
+.ejer p {
     padding-left: 5%;
     padding-right: 7%;
 }
+
 .calendario img {
     width: 44%;
 }
 
 /*Y Mucho Mas*/
-.botones-abajo h2, .botones-abajo h4{
+.botones-abajo h2,
+.botones-abajo h4 {
     text-align: center;
     font-family: 'Quattrocento Sans', sans-serif;
 }
+
 .logros h3 {
     color: black;
 }
-.ini, .regis {
+
+.ini,
+.regis {
     width: 50%;
 }
+
 .ini img {
     padding-left: 80%;
     width: 20%;
     padding-top: 4%;
 }
+
 .regis img {
     padding-left: 2%;
     width: 18%;
     padding-top: 4%;
 }
+
 .botones-abajo {
     padding-bottom: 4%;
     padding-top: 3%;
 }
+
 /*Parte del Footer*/
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
-    
+
 }
 
 .capa-footer1 h3 {
@@ -232,4 +279,70 @@ div {
 .sobre-nosotros a {
     text-decoration: none;
     color: white;
+}
+
+@media(max-width: 767px) {
+    .capa-logo img {
+        width: 80%;
+    }
+    .inicio img {
+        width: 100%;
+    }
+    .registrar img {
+        padding-top: 1%;
+        width: 89%;
+    }
+    .inicio, .registrar {
+        width: 50%;
+    }
+    .imagen {
+        background-position: center;
+        height: 50%;
+        width: 100%;
+    }
+    .imagen h1 {
+        font-size: 35px;
+    }
+    .ejer, .receta, .calendario {
+        width: 100%;
+    }
+    .historial, .logros {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .ini img, .regis img {
+
+        padding-left: 0%;
+    }
+    .ini img {
+        width: 76%;
+    }
+    .regis img {
+        width: 70%;
+    }
+    .ini {
+        text-align: end;
+    }
+    
+    .footer-info,
+    .footer-redes,
+    .footer-info p {
+        width: 100%;
+    }
+
+    .footer-info p {
+        padding-left: 0%;
+    }
+
+    .lado-imagenes img {
+        width: 13%;
+    }
+    .img-copyright img {
+        width: 35%;
+        padding-top: 34%;
+    }
+    .sobre-nosotros {
+        padding-top: 6%;
+    }
 }
