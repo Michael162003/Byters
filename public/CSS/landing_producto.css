@@ -49,11 +49,13 @@ div {
     text-align: center;
 }
 .imagen p{
+    font-family: 'Quattrocento Sans', sans-serif;
     color: #fff;
-    text-shadow: 0px 0px 5px #000000;
+    text-shadow: 0px 0px 6px #000000;
     font-size: 20px;
 }
 .imagen h1{
+    font-family: 'Ethnocentric Rg', sans-serif;
     padding-top: 12%;
     margin-top: 0%;
     color:#F69D24;
@@ -64,6 +66,12 @@ div {
 /*Contenido de la aplicacion*/
 .contenido-apli {
     padding-top: 4%;
+}
+.ejer h2, .receta h2, .calendario h2, .historial h2, .logros h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.ejer p, .receta p, .calendario p, .historial p, .logros p {
+    font-family: 'Roboto', sans-serif;
 }
 .ejer, .receta, .calendario {
     width: 33.3%;
@@ -97,21 +105,13 @@ div {
 .logros img {
     width: 30%;
 }
-.historial p {
+.historial p, .receta p, .calendario p  {
     padding-left: 10%;
     padding-right: 12%;
 }
 .ejer p{
     padding-left: 5%;
     padding-right: 7%;
-}
-.receta p {
-    padding-left: 10%;
-    padding-right: 12%;
-}
-.calendario p {
-    padding-left: 10%;
-    padding-right: 12%;
 }
 .calendario img {
     width: 44%;
@@ -120,11 +120,11 @@ div {
 /*Y Mucho Mas*/
 .botones-abajo h2, .botones-abajo h4{
     text-align: center;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 .logros h3 {
     color: black;
 }
-
 .ini, .regis {
     width: 50%;
 }
@@ -146,68 +146,90 @@ div {
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
+    
 }
+
 .capa-footer1 h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
     color: white;
 }
-.footer-redes, .footer-info {
+
+.footer-redes,
+.footer-info {
     width: 50%;
     text-align: center;
 }
-.footer-info p { /*Parrafo de informacion sobre la compañia*/
+
+.footer-info p {
+    /*Parrafo de informacion sobre la compañia*/
     width: 50%;
-    padding-left: 230px;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 24%;
+    padding-top: 2%;
 }
-.lado-imagenes, .nombre-red { /*Para imagenes y nombres de redes sociales*/
+
+.lado-imagenes,
+.nombre-red {
+    /*Para imagenes y nombres de redes sociales*/
     padding-bottom: 10px;
     width: 50%;
     font-family: 'Roboto', sans-serif;
 }
+
 .lado-imagenes {
     text-align: end;
 }
+
 .redes-img {
     width: 7%;
     text-align: end;
     padding-right: 6px;
 }
+
 .nombre-red {
     text-align: start;
     padding-top: 5px;
 }
-.nombre-red a{
+
+.nombre-red a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*CSS para la parte del copyright*/
 .capa-footer2 {
     background-color: #4E4B4C;
 }
-.copyright, .sobre-nosotros {
+
+.copyright,
+.sobre-nosotros {
     width: 50%;
+
 }
+
 .img-copyright {
     width: 25%;
     text-align: end;
 }
-.img-copyright img{
+
+.img-copyright img {
     width: 9%;
     padding-top: 14px;
     padding-right: 5px;
 }
+
 .texto-copyright {
     width: 75%;
+    color: white;
 }
+
 .sobre-nosotros {
     padding-top: 13px;
     text-align: center;
 }
-.sobre-nosotros a{
+
+.sobre-nosotros a {
     text-decoration: none;
-    color: black;
-}
-.contenido {
-    padding-top: 300px;
+    color: white;
 }
