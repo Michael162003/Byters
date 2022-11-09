@@ -55,13 +55,16 @@ body {
     /* padding-left: 34%; */
     width: 50%;
 }
+
 /*Parte del Footer*/
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
+    
 }
 
 .capa-footer1 h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
     color: white;
 }
 
@@ -74,8 +77,10 @@ body {
 .footer-info p {
     /*Parrafo de informacion sobre la compañia*/
     width: 50%;
-    padding-left: 230px;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 24%;
+    padding-top: 2%;
 }
 
 .lado-imagenes,
@@ -103,16 +108,18 @@ body {
 
 .nombre-red a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*CSS para la parte del copyright*/
 .capa-footer2 {
     background-color: #4E4B4C;
 }
+
 .copyright,
 .sobre-nosotros {
     width: 50%;
+
 }
 
 .img-copyright {
@@ -125,8 +132,10 @@ body {
     padding-top: 14px;
     padding-right: 5px;
 }
+
 .texto-copyright {
     width: 75%;
+    color: white;
 }
 
 .sobre-nosotros {
@@ -136,5 +145,5 @@ body {
 
 .sobre-nosotros a {
     text-decoration: none;
-    color: black;
+    color: white;
 }

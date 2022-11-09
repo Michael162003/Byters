@@ -20,9 +20,11 @@ body {
 .logo-equipo {
     padding-bottom: 3%;
 }
+
 .conocenos {
     padding-left: 44%;
 }
+
 .fondo-blanco {
     text-align: center;
     height: 6%;
@@ -33,9 +35,11 @@ body {
     border-top: 100px;
     color: #041E50;
 }
+
 .fondo-blanco h2 {
     margin-top: 0%;
 }
+
 .capa-banner button {
     border-radius: 50px;
     padding-left: 2%;
@@ -52,9 +56,10 @@ body {
     text-align: center;
 }
 
-.capa-somos h4 {
-    padding-left: 20%;
-    padding-right: 20%;
+.capa-somos h3 {
+    padding-left: 11%;
+    padding-right: 11%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .somos-descripcion,
@@ -64,6 +69,10 @@ body {
 
 .somos-descripcion {
     padding-top: 5%;
+}
+
+.somos-descripcion h1 {
+    font-family: 'Ethnocentric Rg', sans-serif;
 }
 
 /*Productos*/
@@ -76,6 +85,7 @@ body {
 }
 
 .capa-proyectos h1 {
+    font-family: 'Ethnocentric Rg', sans-serif;
     margin-top: 0%;
     padding-bottom: 3%;
 }
@@ -87,6 +97,10 @@ body {
 
 .proyectos-apli img {
     width: 60%;
+}
+
+.proyectos-apli h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .proyectos-apli a {
@@ -131,7 +145,9 @@ body {
     width: 33.3%;
     padding-left: 6%;
 }
+
 .capa-empresa h1 {
+    font-family: 'Ethnocentric Rg', sans-serif;
     margin-top: 0%;
     padding-bottom: 3%;
 }
@@ -141,6 +157,16 @@ body {
     width: 80%;
     background-color: #3BBAB2;
     border-radius: 5%;
+}
+
+.fondo-celeste h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.fondo-celeste p {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 /*Nuestro Equipo*/
@@ -153,6 +179,7 @@ body {
 }
 
 .capa-equipo h1 {
+    font-family: 'Ethnocentric Rg', sans-serif;
     margin-top: 0%;
     padding-bottom: 3%;
 }
@@ -171,10 +198,14 @@ body {
 .equipo-michael p,
 .equipo-diego p,
 .equipo-rodrigo p {
+    font-family: 'Roboto', sans-serif;
     padding-left: 1%;
     padding-right: 1%;
 }
-.equipo-sofia img, .equipo-michael img, .equipo-diego img {
+
+.equipo-sofia img,
+.equipo-michael img,
+.equipo-diego img {
     width: 50%;
 }
 
@@ -188,9 +219,11 @@ body {
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
+    
 }
 
 .capa-footer1 h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
     color: white;
 }
 
@@ -203,8 +236,10 @@ body {
 .footer-info p {
     /*Parrafo de informacion sobre la compañia*/
     width: 50%;
-    padding-left: 230px;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 24%;
+    padding-top: 2%;
 }
 
 .lado-imagenes,
@@ -232,7 +267,7 @@ body {
 
 .nombre-red a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*CSS para la parte del copyright*/
@@ -243,6 +278,7 @@ body {
 .copyright,
 .sobre-nosotros {
     width: 50%;
+
 }
 
 .img-copyright {
@@ -258,6 +294,7 @@ body {
 
 .texto-copyright {
     width: 75%;
+    color: white;
 }
 
 .sobre-nosotros {
@@ -267,5 +304,5 @@ body {
 
 .sobre-nosotros a {
     text-decoration: none;
-    color: black;
+    color: white;
 }

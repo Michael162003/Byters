@@ -52,15 +52,21 @@ body {
 .capa-registrar {
     text-align: center;
 }
+.capa-registrar h1 {
+    font-family: 'Ethnocentric Rg', sans-serif;
+    color: #FF6C2B;
+}
 .boton-anadir {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-.boton-anadir button {
+.boton-anadir button, .receta-imagen button {
     background-color: #FF6C2B;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
+    color: white;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 .receta-imagen, .receta-formulario {
     width: 50%;
@@ -71,11 +77,8 @@ body {
     padding-top: 15%;
     padding-bottom: 3%;
 }
-.receta-imagen button {
-    background-color: #FF6C2B;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 10px;
+.receta-formulario h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 .receta-formulario textarea, .receta-formulario input {
     background-color: #eeeeee;
@@ -83,20 +86,24 @@ body {
 .receta-formulario input {
     width: 50%;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 .receta-formulario textarea {
     width: 50%;
     height: 40%;
     resize: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Parte del Footer*/
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
+    
 }
 
 .capa-footer1 h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
     color: white;
 }
 
@@ -109,8 +116,10 @@ body {
 .footer-info p {
     /*Parrafo de informacion sobre la compañia*/
     width: 50%;
-    padding-left: 230px;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 24%;
+    padding-top: 2%;
 }
 
 .lado-imagenes,
@@ -138,16 +147,18 @@ body {
 
 .nombre-red a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*CSS para la parte del copyright*/
 .capa-footer2 {
     background-color: #4E4B4C;
 }
+
 .copyright,
 .sobre-nosotros {
     width: 50%;
+
 }
 
 .img-copyright {
@@ -160,8 +171,10 @@ body {
     padding-top: 14px;
     padding-right: 5px;
 }
+
 .texto-copyright {
     width: 75%;
+    color: white;
 }
 
 .sobre-nosotros {
@@ -171,5 +184,5 @@ body {
 
 .sobre-nosotros a {
     text-decoration: none;
-    color: black;
+    color: white;
 }

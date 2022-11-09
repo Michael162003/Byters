@@ -8,152 +8,108 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.capa-logo, .capa-perfil{
+
+/*Header*/
+.header-logo,
+.header-perfil {
     width: 50%;
     background-color: #4E4B4C;
 }
-.capa-logo img {
-    width: 160px;
-    padding-left: 30px;
-    padding-bottom: 5px;
+
+.header-logo img {
+    width: 17%;
+    padding-left: 3%;
+    padding-bottom: 1%;
 }
-.capa-perfil img {
-    width: 62px;
+
+.header-perfil img {
+    width: 6%;
     padding-top: 10px;
     padding-right: 20px;
 }
-.capa-perfil {
+
+.header-perfil {
     text-align: end;
 }
+
+/*Navbar Menu*/
 .capa-navbar {
     background-color: #FFC34E;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Roboto', sans-serif;
 }
+
 .capa-navbar a {
     width: 25%;
     text-align: center;
     text-decoration: none;
     color: black;
 }
-.capa-footer1 {
-    background-color: #5A5D5D;
-    padding-bottom: 20px;
-}
-.capa-footer1 h3 {
-    color: white;
-}
-.capa-redes, .capa-info {
-    width: 50%;
-    text-align: center;
-}
-.capa-info p {
-    width: 50%;
-    padding-left: 230px;
-}
-.w-imagenes, .nombre-red {
-    padding-bottom: 10px;
-    width: 50%;
-}
-.w-imagenes {
-    text-align: end;
-}
-.redes-img {
-    width: 7%;
-    text-align: end;
-    padding-right: 6px;
-}
-.nombre-red {
-    text-align: start;
-    padding-top: 5px;
-}
-.nombre-red a{
-    text-decoration: none;
-    color: black;
-}
-.capa-footer2 {
-    background-color: #4E4B4C;
-}
-.copyright, .sobre-nosotros {
-    width: 50%;
-}
-.img-copyright {
-    width: 25%;
-    text-align: end;
-}
-.img-copyright img{
-    width: 9%;
-    padding-top: 14px;
-    padding-right: 5px;
-}
-.texto-copyright {
-    width: 75%;
-}
-.sobre-nosotros {
-    padding-top: 13px;
-    text-align: center;
-}
-.sobre-nosotros a{
-    text-decoration: none;
-    color: black;
-}
 
+/*Categorias*/
 .capa-categorias {
-    padding-top: 1%;
     padding-bottom: 3%;
 }
 .titulo-recetas {
     text-align: center;
+    font-family: 'Ethnocentric Rg', sans-serif;
     font-weight: bold;
-    font-size: 60px;
     color: #FF6C2B ;
+    padding-bottom: 3%;
 }
 
 .cuadros-recetas{
     width: 33.33%;
     text-align: center;
 }
+.estilo-nombres-recetas{
+    color: #FF6C2B;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
 
 .personalizadas-recetas {
     text-align: center;
+    font-family: 'Quattrocento Sans', sans-serif;
+
 }
 
 .imagen-personalizado {
     width: 23.2%;
 }
 
-.comida-categoria {
-    padding-top: 6%;
-}
 
-.imagenes-opciones-recetas{
-    width: 70%;
-}
-
-.estilo-nombres-recetas{
-    color: #FF6C2B;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
-}
-
+/*Recetas Display*/
 .titulos-comidas{
     font-size: 40px;
+    font-family: 'Quattrocento Sans', sans-serif;
     text-align: center;
     color: #FF6C2B;
 }
 
+.comida-categoria {
+    padding-top: 6%;
+}
+.estilo-nombres {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.imagenes-opciones-recetas{
+    width: 70%;
+}
 .imagenes-miniatura-recetas{
     width: 20px;
     height: 20px;
 }
-
 .estilo-texto{
     text-align: left;
     padding-right: 5%;
+    font-family: 'Roboto', sans-serif;
+
 }
-
-
 
 .comida, .texto{
     width: 50%;
@@ -170,4 +126,96 @@ body {
     height: 1%;
     width: 100%;
     background-color: #4E4B4C;
+}
+
+/*Parte del Footer*/
+.capa-footer1 {
+    background-color: #5A5D5D;
+    padding-bottom: 20px;
+    
+}
+
+.capa-footer1 h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: white;
+}
+
+.footer-redes,
+.footer-info {
+    width: 50%;
+    text-align: center;
+}
+
+.footer-info p {
+    /*Parrafo de informacion sobre la compañia*/
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 24%;
+    padding-top: 2%;
+}
+
+.lado-imagenes,
+.nombre-red {
+    /*Para imagenes y nombres de redes sociales*/
+    padding-bottom: 10px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lado-imagenes {
+    text-align: end;
+}
+
+.redes-img {
+    width: 7%;
+    text-align: end;
+    padding-right: 6px;
+}
+
+.nombre-red {
+    text-align: start;
+    padding-top: 5px;
+}
+
+.nombre-red a {
+    text-decoration: none;
+    color: white;
+}
+
+/*CSS para la parte del copyright*/
+.capa-footer2 {
+    background-color: #4E4B4C;
+}
+
+.copyright,
+.sobre-nosotros {
+    width: 50%;
+
+}
+
+.img-copyright {
+    width: 25%;
+    text-align: end;
+}
+
+.img-copyright img {
+    width: 9%;
+    padding-top: 14px;
+    padding-right: 5px;
+}
+
+.texto-copyright {
+    width: 75%;
+    color: white;
+}
+
+.sobre-nosotros {
+    padding-top: 13px;
+    text-align: center;
+}
+
+.sobre-nosotros a {
+    text-decoration: none;
+    color: white;
 }
