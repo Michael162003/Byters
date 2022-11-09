@@ -53,8 +53,9 @@ div {
 /*Contenido*/
 .titulo1{
     text-align: center;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Ethnocentric Rg', sans-serif;
     padding-bottom: 60px;
+    color: #FF6C2B ;
 }
 .ventajas{
     font-family: 'Roboto', sans-serif;
