@@ -1,9 +1,11 @@
 div {
     box-sizing: border-box;
 }
+
 body {
     margin: 0%;
 }
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -52,15 +54,19 @@ body {
 .capa-registrar {
     text-align: center;
 }
+
 .capa-registrar h1 {
     font-family: 'Ethnocentric Rg', sans-serif;
     color: #FF6C2B;
 }
+
 .boton-anadir {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-.boton-anadir button, .receta-imagen button {
+
+.boton-anadir button,
+.receta-imagen button {
     background-color: #FF6C2B;
     padding-left: 30px;
     padding-right: 30px;
@@ -68,26 +74,34 @@ body {
     color: white;
     font-family: 'Quattrocento Sans', sans-serif;
 }
-.receta-imagen, .receta-formulario {
+
+.receta-imagen,
+.receta-formulario {
     width: 50%;
     padding-top: 1%;
 }
+
 .receta-imagen img {
     width: 30%;
     padding-top: 15%;
     padding-bottom: 3%;
 }
+
 .receta-formulario h2 {
     font-family: 'Quattrocento Sans', sans-serif;
 }
-.receta-formulario textarea, .receta-formulario input {
+
+.receta-formulario textarea,
+.receta-formulario input {
     background-color: #eeeeee;
 }
+
 .receta-formulario input {
     width: 50%;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
+
 .receta-formulario textarea {
     width: 50%;
     height: 40%;
@@ -99,7 +113,7 @@ body {
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
-    
+
 }
 
 .capa-footer1 h3 {
@@ -185,4 +199,52 @@ body {
 .sobre-nosotros a {
     text-decoration: none;
     color: white;
+}
+
+@media(max-width: 767px) {
+
+    .header-logo img {
+        width: 70%;
+    }
+
+    .header-perfil img {
+        width: 25%;
+        padding-bottom: 3%;
+    }
+
+    .receta-imagen,
+    .receta-formulario {
+        width: 100%;
+    }
+
+    .receta-imagen {
+        padding-bottom: 20%;
+    }
+
+    .receta-formulario {
+        padding-bottom: 60%;
+    }
+
+    .footer-info,
+    .footer-redes,
+    .footer-info p {
+        width: 100%;
+    }
+
+    .footer-info p {
+        padding-left: 0%;
+    }
+
+    .lado-imagenes img {
+        width: 13%;
+    }
+
+    .img-copyright img {
+        width: 35%;
+        padding-top: 34%;
+    }
+
+    .sobre-nosotros {
+        padding-top: 6%;
+    }
 }
