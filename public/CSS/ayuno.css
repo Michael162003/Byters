@@ -189,3 +189,57 @@ div {
     text-decoration: none;
     color: white;
 }
+
+@media(max-width: 767px) {
+    .header-logo img {
+        width: 70%;
+    }
+    .header-perfil img {
+        width: 25%;
+        padding-bottom: 3%;
+    }
+    .titulo1 {
+        padding-bottom: 0%;
+    }
+    .ayuno, .ventajas {
+        width: 100%;
+    }
+    .ayuno {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .ayuno img {
+        width: 100%;
+    }
+    .ventajas p, .ventajas h1 {
+        text-align: center;
+    }
+    .ayuno14, .ayuno16, .ayuno18, .ayuno20 {
+        width: 50%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .metrica img {
+        width: 95%;
+    }
+    .footer-info,
+    .footer-redes,
+    .footer-info p {
+        width: 100%;
+    }
+
+    .footer-info p {
+        padding-left: 0%;
+    }
+
+    .lado-imagenes img {
+        width: 13%;
+    }
+    .img-copyright img {
+        width: 35%;
+        padding-top: 34%;
+    }
+    .sobre-nosotros {
+        padding-top: 6%;
+    }
+}
