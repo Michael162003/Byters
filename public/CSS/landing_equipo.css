@@ -1,145 +1,172 @@
 div {
     box-sizing: border-box;
 }
+
 body {
     margin: 0%;
 }
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
-/*Header*/
+/*Banner*/
 .capa-banner {
-    background-image: url(../Media/fondo_logo.png);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+    background-color: #041E50;
     text-align: center;
 }
 
-/*Contenido*/
-/*Info empresa*/
-.capa-info {
-    padding-bottom: 5%;
+.logo-equipo {
+    padding-bottom: 3%;
 }
-.capa-frase h1 {
+
+.capa-banner button {
+    border-radius: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #041E50;
+}
+
+/*info-equipo*/
+.capa-somos {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-color: #041E50;
+    color: #ffffff;
     text-align: center;
-    width: 30%;
-    position: relative;
-    left: 42%;
-    color: #082D73;
-    font-family: 'Ethnocentric Rg', sans-serif;
-                                                
 }
-.info-empresa, .foto-empresa {
+
+.capa-somos h4 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.somos-descripcion,
+.somos-img {
     width: 50%;
 }
-.info-empresa {
-    text-align: center;
-    padding-top: 9%;
-}
-.info-empresa h1 {
-    color: #EC8211;
-    font-family: 'Ethnocentric Rg', sans-serif;
-                                                
-}
-.info-empresa p {
-    padding-left: 10%;
-    padding-right: 10%;
-    color: #082D73;
-    font-family: 'Roboto', sans-serif;
-}
-.foto-empresa {
-    text-align: center;
-}
-.foto-empresa img {
-    width: auto;
-    height: 550px;
+
+.somos-descripcion {
+    padding-top: 5%;
 }
 
-/*Productos empresa*/
-.nombre-producto {
+/*Productos*/
+.capa-proyectos {
+    background-color: #041E50;
     text-align: center;
-    background-color: #C1C1C1;
+    color: white;
+    padding-top: 6%;
+    padding-bottom: 6%;
 }
-.nombre-producto img {
-    height: auto;
-    width: 30%;
+
+.capa-proyectos h1 {
+    margin-top: 0%;
+    padding-bottom: 3%;
 }
-.fondo-powerbyte {
-    background-image: url(../Media/producto.png);
-    height: 115%;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.proyectos-imagen,
+.proyectos-apli {
+    width: 50%;
 }
-.fondo-powerbyte button {
-    position: relative;
-    left: 18%;  
-    padding-left: 40px;  
-    padding-right: 40px;  
+
+.proyectos-apli img {
+    width: 60%;
+}
+
+.proyectos-apli a {
+    text-decoration: none;
+    color: white;
+}
+
+.proyectos-apli button {
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: #EC8211;
-    color: white;
-    border-width: 0px;
-    top: 60%;
+    border-radius: 10px;
+
 }
 
-/*Mision, Vision, Valores*/
-.capa-estrategias {
-    background-color: #C1C1C1;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-.estrategias-img, .estrategias2-img{
-    width: 30%;
-}
-.estrategias-img {
-    padding-left: 15%;
-}
-.estrategias2-img {
-    padding-left: 3%;
-}
-.estrategias-txt, .estrategias2-txt{
-    width: 70%;
-    color: white;
-}
-.estrategias-txt p, .estrategias2-txt p{
-    font-family: 'Roboto', sans-serif;
-}
-.estrategias-txt h2, .estrategias2-txt h2{
-    font-family: 'Quattrocento Sans', sans-serif;
-}
-.estrategias-txt {
-    padding-right: 32%;
-    text-align: start;
-}
-.estrategias2-txt {
+.proyectos-apli h2 {
     padding-left: 30%;
-    padding-right: 2%;
-    text-align: end;
+    padding-right: 30%;
 }
 
-/*Nuestro equipo*/
+.proyectos-imagen {
+    padding-left: 5%;
+}
+
+.celeste-producto {
+    height: 100%;
+    width: 80%;
+    background-color: #3BBAB2;
+    border-radius: 5%;
+}
+
+/*Nuestra Empresa*/
+.capa-empresa {
+    background-color: #041E50;
+    text-align: center;
+    color: white;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.w-empresa {
+    width: 33.3%;
+    padding-left: 6%;
+}
+.capa-empresa h1 {
+    margin-top: 0%;
+    padding-bottom: 3%;
+}
+
+.fondo-celeste {
+    height: 100%;
+    width: 80%;
+    background-color: #3BBAB2;
+    border-radius: 5%;
+}
+
+/*Nuestro Equipo*/
 .capa-equipo {
-    padding-top: 1%;
-    padding-bottom: 2%;
-}
-.capa-equipo h1{
-    font-family: 'Ethnocentric Rg', sans-serif;
-    color: #EC8211;
+    padding-top: 6%;
+    background-color: #041E50;
     text-align: center;
+    color: white;
+    padding-bottom: 5%;
 }
-.equipo-sofia, .equipo-michael, .equipo-diego, .equipo-rodrigo {
-    width: 25%;
-    text-align: center;
+
+.capa-equipo h1 {
+    margin-top: 0%;
+    padding-bottom: 3%;
+}
+
+.equipo-sofia,
+.equipo-michael,
+.equipo-diego,
+.equipo-rodrigo {
     padding-top: 2%;
+    text-align: center;
+    width: 25%;
     font-family: 'Quattrocento Sans', sans-serif;
 }
-.equipo-sofia p, .equipo-michael p, .equipo-diego p, .equipo-rodrigo p {
-    padding-left: 7%;
-    padding-right: 7%;
-    font-family: 'Roboto', sans-serif;
+
+.equipo-sofia p,
+.equipo-michael p,
+.equipo-diego p,
+.equipo-rodrigo p {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.equipo-sofia img, .equipo-michael img, .equipo-diego img {
+    width: 50%;
+}
+
+.divisor {
+    height: 1%;
+    width: 100%;
+    background-color: #3BBAB2;
 }
 
 /*Parte del Footer*/
@@ -147,36 +174,48 @@ body {
     background-color: #5A5D5D;
     padding-bottom: 20px;
 }
+
 .capa-footer1 h3 {
     color: white;
 }
-.footer-redes, .footer-info {
+
+.footer-redes,
+.footer-info {
     width: 50%;
     text-align: center;
 }
-.footer-info p { /*Parrafo de informacion sobre la compañia*/
+
+.footer-info p {
+    /*Parrafo de informacion sobre la compañia*/
     width: 50%;
     padding-left: 230px;
     font-family: 'Roboto', sans-serif;
 }
-.lado-imagenes, .nombre-red { /*Para imagenes y nombres de redes sociales*/
+
+.lado-imagenes,
+.nombre-red {
+    /*Para imagenes y nombres de redes sociales*/
     padding-bottom: 10px;
     width: 50%;
     font-family: 'Roboto', sans-serif;
 }
+
 .lado-imagenes {
     text-align: end;
 }
+
 .redes-img {
     width: 7%;
     text-align: end;
     padding-right: 6px;
 }
+
 .nombre-red {
     text-align: start;
     padding-top: 5px;
 }
-.nombre-red a{
+
+.nombre-red a {
     text-decoration: none;
     color: black;
 }
@@ -185,29 +224,37 @@ body {
 .capa-footer2 {
     background-color: #4E4B4C;
 }
-.copyright, .sobre-nosotros {
+
+.copyright,
+.sobre-nosotros {
     width: 50%;
 }
+
 .img-copyright {
     width: 25%;
     text-align: end;
 }
-.img-copyright img{
+
+.img-copyright img {
     width: 9%;
     padding-top: 14px;
     padding-right: 5px;
 }
+
 .texto-copyright {
     width: 75%;
 }
+
 .sobre-nosotros {
     padding-top: 13px;
     text-align: center;
 }
-.sobre-nosotros a{
+
+.sobre-nosotros a {
     text-decoration: none;
     color: black;
 }
+
 .contenido {
     padding-top: 300px;
 }
