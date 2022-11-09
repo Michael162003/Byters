@@ -42,6 +42,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.capa-navbar a {
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
 /*Recetas*/
 .capa-navbar a {
     width: 25%;
@@ -57,7 +64,7 @@ body {
 }
 
 .capa-recetas h1 {
-    font-size: 30px;
+    font-family: 'Ethnocentric Rg', sans-serif;
     color: #FF6C2B;
     padding-bottom: 5%;
 }
@@ -68,15 +75,18 @@ body {
     padding-right: 30px;
     border-radius: 10px;
     color: white;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 /*Parte del Footer*/
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
+    
 }
 
 .capa-footer1 h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
     color: white;
 }
 
@@ -89,8 +99,10 @@ body {
 .footer-info p {
     /*Parrafo de informacion sobre la compañia*/
     width: 50%;
-    padding-left: 230px;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 24%;
+    padding-top: 2%;
 }
 
 .lado-imagenes,
@@ -118,7 +130,7 @@ body {
 
 .nombre-red a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*CSS para la parte del copyright*/
@@ -129,6 +141,7 @@ body {
 .copyright,
 .sobre-nosotros {
     width: 50%;
+
 }
 
 .img-copyright {
@@ -144,6 +157,7 @@ body {
 
 .texto-copyright {
     width: 75%;
+    color: white;
 }
 
 .sobre-nosotros {
@@ -153,5 +167,5 @@ body {
 
 .sobre-nosotros a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
