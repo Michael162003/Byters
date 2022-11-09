@@ -1,0 +1,173 @@
+div {
+    box-sizing: border-box;
+}
+body {
+    margin: 0%;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.capa-logo, .capa-perfil{
+    width: 50%;
+    background-color: #4E4B4C;
+}
+.capa-logo img {
+    width: 160px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+.capa-perfil img {
+    width: 62px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.capa-perfil {
+    text-align: end;
+}
+.capa-navbar {
+    background-color: #FFC34E;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.capa-navbar a {
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.capa-footer1 {
+    background-color: #5A5D5D;
+    padding-bottom: 20px;
+}
+.capa-footer1 h3 {
+    color: white;
+}
+.capa-redes, .capa-info {
+    width: 50%;
+    text-align: center;
+}
+.capa-info p {
+    width: 50%;
+    padding-left: 230px;
+}
+.w-imagenes, .nombre-red {
+    padding-bottom: 10px;
+    width: 50%;
+}
+.w-imagenes {
+    text-align: end;
+}
+.redes-img {
+    width: 7%;
+    text-align: end;
+    padding-right: 6px;
+}
+.nombre-red {
+    text-align: start;
+    padding-top: 5px;
+}
+.nombre-red a{
+    text-decoration: none;
+    color: black;
+}
+.capa-footer2 {
+    background-color: #4E4B4C;
+}
+.copyright, .sobre-nosotros {
+    width: 50%;
+}
+.img-copyright {
+    width: 25%;
+    text-align: end;
+}
+.img-copyright img{
+    width: 9%;
+    padding-top: 14px;
+    padding-right: 5px;
+}
+.texto-copyright {
+    width: 75%;
+}
+.sobre-nosotros {
+    padding-top: 13px;
+    text-align: center;
+}
+.sobre-nosotros a{
+    text-decoration: none;
+    color: black;
+}
+
+.capa-categorias {
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.titulo-recetas {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: #FF6C2B ;
+}
+
+.cuadros-recetas{
+    width: 33.33%;
+    text-align: center;
+}
+
+.personalizadas-recetas {
+    text-align: center;
+}
+
+.imagen-personalizado {
+    width: 23.2%;
+}
+
+.comida-categoria {
+    padding-top: 6%;
+}
+
+.imagenes-opciones-recetas{
+    width: 70%;
+}
+
+.estilo-nombres-recetas{
+    color: #FF6C2B;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.titulos-comidas{
+    font-size: 40px;
+    text-align: center;
+    color: #FF6C2B;
+}
+
+.imagenes-miniatura-recetas{
+    width: 20px;
+    height: 20px;
+}
+
+.estilo-texto{
+    text-align: left;
+    padding-right: 5%;
+}
+
+
+
+.comida, .texto{
+    width: 50%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 6%;
+    
+}
+.fotos{
+    width: 70%;
+}
+
+.divisor {
+    height: 1%;
+    width: 100%;
+    background-color: #4E4B4C;
+}
