@@ -67,6 +67,7 @@ body {
 }
 .info-perfil h2{
     padding-bottom: 2%;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 /*grafico*/
@@ -86,8 +87,14 @@ body {
 }
 .h1-agua {
     padding-top: 3%;
-    width: 20%;
-    text-align: right;
+    width: 30%;
+    text-align: center;
+}
+.h1-agua h1 {
+}
+.img-agua {
+    width: 70%;
+    padding-right: 15%;
 }
 .w-agua {
     width: 20%;
@@ -104,8 +111,8 @@ body {
     padding-bottom: 7%;
 }
 .capa-logros button {
-    background-color: #FFC34E;
-    color: black;
+    background-color: #FF6C2B;
+    color: white;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 7px;
@@ -117,14 +124,26 @@ body {
     width: 25%;
 }
 
+.capa-lobtenidos h1 , .capa-lpendientes h1, .h1-agua h1, .capa-grafico h1 {
+    font-family: 'Ethnocentric Rg', sans-serif;
+    color: #FF6C2B;
+}
+.capa-lobtenidos h2, .capa-lpendientes h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.capa-lobtenidos h1 {
+    padding-bottom: 2%;
+}
 
 /*Parte del Footer*/
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
+    
 }
 
 .capa-footer1 h3 {
+    font-family: 'Quattrocento Sans', sans-serif;
     color: white;
 }
 
@@ -137,8 +156,10 @@ body {
 .footer-info p {
     /*Parrafo de informacion sobre la compañia*/
     width: 50%;
-    padding-left: 230px;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-left: 24%;
+    padding-top: 2%;
 }
 
 .lado-imagenes,
@@ -166,16 +187,18 @@ body {
 
 .nombre-red a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*CSS para la parte del copyright*/
 .capa-footer2 {
     background-color: #4E4B4C;
 }
+
 .copyright,
 .sobre-nosotros {
     width: 50%;
+
 }
 
 .img-copyright {
@@ -188,8 +211,10 @@ body {
     padding-top: 14px;
     padding-right: 5px;
 }
+
 .texto-copyright {
     width: 75%;
+    color: white;
 }
 
 .sobre-nosotros {
@@ -199,9 +224,71 @@ body {
 
 .sobre-nosotros a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-.contenido {
-    padding-top: 300px;
+
+@media(max-width: 767px) {
+
+    .header-logo img {
+        width: 70%;
+    }
+    .header-perfil img {
+        width: 25%;
+        padding-bottom: 3%;
+    }
+    .foto-perfil, .info-perfil {
+        width: 100%;
+    }
+    .foto-perfil img {
+        padding-left: 5%;
+        width: 90%;
+    }
+    .foto-grafico img {
+        width: 90%;
+    }
+    .h1-agua, .img-agua {
+        width: 100%;
+        text-align: center;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .w-agua {
+        width: 20%;
+    }
+    .w-agua img {
+        width: 100%;
+    }
+    .w-logros {
+        width: 100%;
+    }
+    .w-logros img {
+        width: 80%;
+    }
+
+    .h1-agua h1 {
+        font-size: 25px;
+    }
+
+    .footer-info,
+    .footer-redes,
+    .footer-info p {
+        width: 100%;
+    }
+
+    .footer-info p {
+        padding-left: 0%;
+    }
+
+    .lado-imagenes img {
+        width: 13%;
+    }
+    .img-copyright img {
+        width: 35%;
+        padding-top: 34%;
+    }
+    .sobre-nosotros {
+        padding-top: 6%;
+    }
+
 }

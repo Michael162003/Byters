@@ -40,12 +40,6 @@ body {
     margin-top: 0%;
 }
 
-.capa-banner button {
-    border-radius: 50px;
-    padding-left: 2%;
-    padding-right: 2%;
-    color: #041E50;
-}
 
 /*info-equipo*/
 .capa-somos {
@@ -219,7 +213,7 @@ body {
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
-    
+
 }
 
 .capa-footer1 h3 {
@@ -305,4 +299,88 @@ body {
 .sobre-nosotros a {
     text-decoration: none;
     color: white;
+}
+
+/*Media Query*/
+@media(max-width: 767px) {
+    .logo-equipo img {
+        width: 100%;
+    }
+
+    .conocenos {
+        padding-left: 11%;
+    }
+
+    .fondo-blanco {
+        width: 90%;
+    }
+
+    .somos-descripcion,
+    .somos-img {
+        width: 100%;
+    }
+
+    .somos-img img {
+        width: 100%;
+    }
+
+    .proyectos-imagen,
+    .proyectos-apli {
+        width: 95%;
+    }
+
+    .proyectos-apli {
+        padding-left: 4%;
+    }
+
+    .proyectos-apli img {
+        width: 80%;
+    }
+
+    .proyectos-apli h2 {
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+
+    .celeste-producto,
+    .celeste-producto img {
+        width: 99%;
+    }
+
+    .w-empresa {
+        width: 100%;
+        padding-bottom: 2%;
+    }
+
+    .fondo-celeste {
+        width: 95%;
+    }
+
+    .equipo-diego,
+    .equipo-sofia,
+    .equipo-michael,
+    .equipo-rodrigo {
+        width: 100%;
+    }
+
+    .footer-info,
+    .footer-redes,
+    .footer-info p {
+        width: 100%;
+    }
+
+    .footer-info p {
+        padding-left: 0%;
+    }
+
+    .lado-imagenes img {
+        width: 13%;
+    }
+    .img-copyright img {
+        width: 35%;
+        padding-top: 34%;
+    }
+    .sobre-nosotros {
+        padding-top: 6%;
+    }
 }
