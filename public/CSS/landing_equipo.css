@@ -199,7 +199,8 @@ body {
 
 .equipo-sofia img,
 .equipo-michael img,
-.equipo-diego img {
+.equipo-diego img,
+.equipo-rodrigo img{
     width: 50%;
 }
 
@@ -213,7 +214,7 @@ body {
 .capa-footer1 {
     background-color: #5A5D5D;
     padding-bottom: 20px;
-    
+
 }
 
 .capa-footer1 h3 {
@@ -351,24 +352,27 @@ body {
         width: 100%;
     }
 
-   /*Foooter*/
-   .footer-info,
-   .footer-redes,
-   .footer-info p {
-       width: 100%;
-   }
+    /*Foooter*/
+    .footer-info,
+    .footer-redes,
+    .footer-info p {
+        width: 100%;
+    }
 
-   .footer-info p {
-       padding-left: 0%;
-   }
-   .nombre-red {
-       width: 33.3%;
-   }
-   .img-copyright img {
-       width: 35%;
-       padding-top: 34%;
-   }
-   .sobre-nosotros {
-       padding-top: 6%;
-   }
+    .footer-info p {
+        padding-left: 0%;
+    }
+
+    .nombre-red {
+        width: 33.3%;
+    }
+
+    .img-copyright img {
+        width: 35%;
+        padding-top: 34%;
+    }
+
+    .sobre-nosotros {
+        padding-top: 6%;
+    }
 }
