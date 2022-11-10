@@ -51,8 +51,13 @@ body {
 }
 
 /*Calendario*/
-.calen {
+.calendario {
     text-align: center;
+    font-family: 'Ethnocentric Rg', sans-serif;
+    padding-bottom: 6%;
+}
+.calendario h1 {
+    color: #FF6C2B;
 }
 .calen img {
     /* padding-left: 34%; */
