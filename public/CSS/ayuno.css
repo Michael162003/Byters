@@ -125,13 +125,7 @@ div {
     padding-top: 2%;
 }
 
-.lado-imagenes,
-.nombre-red {
-    /*Para imagenes y nombres de redes sociales*/
-    padding-bottom: 10px;
-    width: 50%;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .lado-imagenes {
     text-align: end;
@@ -144,8 +138,10 @@ div {
 }
 
 .nombre-red {
-    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
     padding-top: 5px;
+    width: 100%;
 }
 
 .nombre-red a {
@@ -161,23 +157,13 @@ div {
 .copyright,
 .sobre-nosotros {
     width: 50%;
-
-}
-
-.img-copyright {
-    width: 25%;
-    text-align: end;
-}
-
-.img-copyright img {
-    width: 9%;
-    padding-top: 14px;
-    padding-right: 5px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .texto-copyright {
-    width: 75%;
+    padding-left: 5%;
     color: white;
+
 }
 
 .sobre-nosotros {
@@ -222,6 +208,7 @@ div {
     .metrica img {
         width: 95%;
     }
+    /*Foooter*/
     .footer-info,
     .footer-redes,
     .footer-info p {
@@ -231,9 +218,8 @@ div {
     .footer-info p {
         padding-left: 0%;
     }
-
-    .lado-imagenes img {
-        width: 13%;
+    .nombre-red {
+        width: 33.3%;
     }
     .img-copyright img {
         width: 35%;
