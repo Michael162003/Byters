@@ -24,10 +24,13 @@ body {
     padding-bottom: 1%;
 }
 
-.header-perfil img {
-    width: 6%;
-    padding-top: 10px;
-    padding-right: 20px;
+.header-perfil {
+    padding-top: 14px;
+    padding-right: 5%;
+}
+
+.header-perfil i{
+    color: #FFC34E
 }
 
 .header-perfil {
@@ -162,13 +165,7 @@ body {
     padding-top: 2%;
 }
 
-.lado-imagenes,
-.nombre-red {
-    /*Para imagenes y nombres de redes sociales*/
-    padding-bottom: 10px;
-    width: 50%;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .lado-imagenes {
     text-align: end;
@@ -181,8 +178,10 @@ body {
 }
 
 .nombre-red {
-    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
     padding-top: 5px;
+    width: 100%;
 }
 
 .nombre-red a {
@@ -198,23 +197,14 @@ body {
 .copyright,
 .sobre-nosotros {
     width: 50%;
-
+    font-family: 'Roboto', sans-serif;
 }
 
-.img-copyright {
-    width: 25%;
-    text-align: end;
-}
-
-.img-copyright img {
-    width: 9%;
-    padding-top: 14px;
-    padding-right: 5px;
-}
 
 .texto-copyright {
-    width: 75%;
+    padding-left: 5%;
     color: white;
+
 }
 
 .sobre-nosotros {
@@ -269,7 +259,8 @@ body {
     .h1-agua h1 {
         font-size: 25px;
     }
-
+    
+    /*Foooter*/
     .footer-info,
     .footer-redes,
     .footer-info p {
@@ -279,9 +270,8 @@ body {
     .footer-info p {
         padding-left: 0%;
     }
-
-    .lado-imagenes img {
-        width: 13%;
+    .nombre-red {
+        width: 33.3%;
     }
     .img-copyright img {
         width: 35%;
