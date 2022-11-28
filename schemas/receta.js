@@ -9,4 +9,5 @@ var recetaSchema = mongoose.Schema({
     correo: String
 });
 
+//Permite que node pueda leer el archivo
 module.exports = mongoose.model('Receta', recetaSchema, 'Recetas');

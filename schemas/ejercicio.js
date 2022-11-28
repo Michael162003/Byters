@@ -8,4 +8,5 @@ var ejercicioSchema = mongoose.Schema({
     duracion: String
 });
 
+//Permite que node pueda leer el archivo
 module.exports = mongoose.model('Ejercicio', ejercicioSchema, 'Ejercicios');

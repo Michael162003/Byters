@@ -9,4 +9,5 @@ var ayunoSchema = mongoose.Schema({
     fecha: String
 });
 
+//Permite que node pueda leer el archivo
 module.exports = mongoose.model('Ayuno', ayunoSchema, 'Ayunos');

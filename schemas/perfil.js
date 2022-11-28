@@ -10,4 +10,5 @@ var perfilSchema = mongoose.Schema({
     peso: Number
 });
 
+//Permite que node pueda leer el archivo
 module.exports = mongoose.model('Perfil', perfilSchema, 'Perfiles');

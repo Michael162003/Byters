@@ -8,4 +8,5 @@ var logroSchema = mongoose.Schema({
     correo: String
 });
 
+//Permite que node pueda leer el archivo
 module.exports = mongoose.model('Logro', logroSchema, 'Logros');
