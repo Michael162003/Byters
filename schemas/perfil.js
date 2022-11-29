@@ -7,7 +7,8 @@ var perfilSchema = mongoose.Schema({
     fecha_nacimiento: String,
     genero: String,
     altura: Number,
-    peso: Number
+    peso: Number,
+    foto: String
 });
 
 //Permite que node pueda leer el archivo
