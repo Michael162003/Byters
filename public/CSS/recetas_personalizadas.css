@@ -122,10 +122,11 @@ body {
 
 .nombre-red {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
     width: 100%;
 }
+
 
 .nombre-red a {
     text-decoration: none;

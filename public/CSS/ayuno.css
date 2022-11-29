@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
 }
 
 div {
@@ -55,18 +58,22 @@ div {
 
 /*Contenido*/
 .titulo1{
+    padding-top: 20px;
     text-align: center;
     font-family: 'Ethnocentric Rg', sans-serif;
     padding-bottom: 60px;
     color: #FF6C2B ;
 }
 .ventajas{
+    padding-left: 20px;
     font-family: 'Roboto', sans-serif;
 }
 .ventajas h1 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 .ayuno, .ventajas {
+    padding-left: 20px;
     width: 50%;
 }
 .ayuno {
@@ -80,7 +87,7 @@ div {
 
 .titulo2{
     text-align: center;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 50px;
 }
 
@@ -100,7 +107,6 @@ div {
     text-align: justify;
     font-family: 'Roboto', sans-serif;
 }
-
 /*Parte del Footer*/
 .capa-footer1 {
     background-color: #5A5D5D;
@@ -109,7 +115,7 @@ div {
 }
 
 .capa-footer1 h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -142,8 +148,8 @@ div {
 
 .nombre-red {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
     width: 100%;
 }
 

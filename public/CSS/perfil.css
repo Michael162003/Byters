@@ -70,7 +70,7 @@ body {
 }
 .info-perfil h2{
     padding-bottom: 2%;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*grafico*/
@@ -132,7 +132,7 @@ body {
     color: #FF6C2B;
 }
 .capa-lobtenidos h2, .capa-lpendientes h2 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:  'Montserrat', sans-serif;
 }
 .capa-lobtenidos h1 {
     padding-bottom: 2%;
@@ -146,7 +146,7 @@ body {
 }
 
 .capa-footer1 h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:  'Montserrat', sans-serif;
     color: white;
 }
 
@@ -179,8 +179,8 @@ body {
 
 .nombre-red {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
     width: 100%;
 }
 

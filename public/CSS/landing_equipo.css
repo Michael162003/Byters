@@ -23,12 +23,13 @@ body {
 
 .conocenos {
     padding-left: 44%;
+    font-family:'Montserrat', sans-serif
 }
 
 .fondo-blanco {
     text-align: center;
     height: 6%;
-    width: 20%;
+    width: 22%;
     padding-top: 1%;
     background-color: #ffffff;
     border-radius: 50px;
@@ -94,7 +95,7 @@ body {
 }
 
 .proyectos-apli h2 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .proyectos-apli a {
@@ -154,7 +155,7 @@ body {
 }
 
 .fondo-celeste h2 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .fondo-celeste p {
@@ -175,7 +176,7 @@ body {
 .capa-equipo h1 {
     font-family: 'Ethnocentric Rg', sans-serif;
     margin-top: 0%;
-    padding-bottom: 3%;
+    padding-bottom :3%;
 }
 
 .equipo-sofia,
@@ -185,7 +186,7 @@ body {
     padding-top: 2%;
     text-align: center;
     width: 25%;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .equipo-sofia p,
@@ -218,7 +219,7 @@ body {
 }
 
 .capa-footer1 h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -251,8 +252,8 @@ body {
 
 .nombre-red {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
     width: 100%;
 }
 
