@@ -18,6 +18,7 @@ div {
 }
 
 .capa-logo img {
+    padding-top: 10px;
     width: 17%;
     padding-left: 3%;
     padding-bottom: 1%;
@@ -29,11 +30,13 @@ div {
 }
 
 .registrar img {
-    width: 45%;
+    padding-top: 20px;
     padding-left: 3%;
 }
 
 .inicio {
+    padding-top: 10px;
+    padding-bottom: 30px;
     text-align: right;
     width: 70%;
 }
@@ -61,7 +64,9 @@ div {
 }
 
 .imagen p {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:'Montserrat', sans-serif
+    
+    ;
     color: #fff;
     text-shadow: 0px 0px 7px #000000;
     font-size: 30px;
@@ -86,7 +91,7 @@ div {
 .calendario h2,
 .historial h2,
 .logros h2 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 
 .ejer p,
@@ -109,7 +114,7 @@ div {
 }
 
 .receta img {
-    width: 58.7%;
+    width: 60%;
 }
 
 .historial {
@@ -133,11 +138,11 @@ div {
 }
 
 .historial img {
-    width: 50%;
+    width: 60%;
 }
 
 .logros img {
-    width: 30%;
+    width: 65%;
 }
 
 .historial p,
@@ -153,14 +158,14 @@ div {
 }
 
 .calendario img {
-    width: 44%;
+    width: 60%;
 }
 
 /*Y Mucho Mas*/
 .botones-abajo h2,
 .botones-abajo h4 {
     text-align: center;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif
 }
 
 .logros h3 {
@@ -171,7 +176,6 @@ div {
 .regis {
     width: 50%;
 }
-
 .ini img {
     padding-left: 80%;
     width: 20%;
@@ -183,7 +187,6 @@ div {
     width: 18%;
     padding-top: 4%;
 }
-
 .botones-abajo {
     padding-bottom: 4%;
     padding-top: 3%;
@@ -197,7 +200,7 @@ div {
 }
 
 .capa-footer1 h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:'Montserrat', sans-serif;
     color: white;
 }
 
@@ -227,11 +230,10 @@ div {
     text-align: end;
     padding-right: 6px;
 }
-
 .nombre-red {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
     width: 100%;
 }
 

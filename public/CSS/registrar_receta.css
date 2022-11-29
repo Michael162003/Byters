@@ -75,7 +75,7 @@ body {
     padding-right: 30px;
     border-radius: 10px;
     color: white;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .receta-imagen,
@@ -91,7 +91,7 @@ body {
 }
 
 .receta-formulario h2 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .receta-formulario textarea,
@@ -120,7 +120,7 @@ body {
 }
 
 .capa-footer1 h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -153,10 +153,11 @@ body {
 
 .nombre-red {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
     width: 100%;
 }
+
 
 .nombre-red a {
     text-decoration: none;

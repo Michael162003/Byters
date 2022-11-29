@@ -3,6 +3,7 @@ div {
 }
 body {
     margin: 0%;
+    
 }
 .wrapper {
     display: flex;
@@ -28,7 +29,7 @@ body {
 }
 
 .header-perfil i{
-    color: #FFC34E
+    color: black
 }
 
 .header-perfil {
@@ -67,17 +68,16 @@ body {
     text-align: center;
 }
 .estilo-nombres-recetas{
-    color: #FF6C2B;
-    font-weight: bold;
-    font-size: 30px;
+    color: black;
+    font-size: x-large;
     text-decoration: none;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 
 
 .personalizadas-recetas {
     text-align: center;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:'Montserrat', sans-serif
 
 }
 
@@ -89,7 +89,7 @@ body {
 /*Recetas Display*/
 .titulos-comidas{
     font-size: 40px;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:'Montserrat', sans-serif;
     text-align: center;
     color: #FF6C2B;
 }
@@ -98,7 +98,7 @@ body {
     padding-top: 6%;
 }
 .estilo-nombres {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 .imagenes-opciones-recetas{
     width: 70%;
@@ -135,7 +135,7 @@ body {
 }
 
 .capa-footer1 h3 {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -168,8 +168,8 @@ body {
 
 .nombre-red {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
     width: 100%;
 }
 
