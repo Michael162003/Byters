@@ -2,11 +2,12 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 
-var Perfil = require("../schemas/Perfil.js");
+var perfil = require("../schemas/perfil.js");
+var logros = require("../schemas/logro.js");
 
 router.post('/buscar', function (req, res) {
     var idUsuario = req.body.idUsuario;
-    Perfil.findById(idUsuario).exec()
+    perfil.findById(idUsuario).exec()
         .then(
             function (result) {
                 res.json(result);
@@ -26,20 +27,12 @@ router.post('/actualizar', function (req, res) {
     var foto = req.body.foto
 
 // findOneAndUpdate - Filtro - Valores - Opciones - Función anónima
-Perfil.findOneAndUpdate({ _id: _id }, { $set: { nombre: nombre } }, { $set: { fecha_nacimiento: fecha_nacimiento } }, { $set: { genero: genero } }, { $set: { altura: altura } }, { $set: { peso: peso } }, { $set: { foto: foto } }, { useFindAndModify: false, new: true }, function (err, doc) {
+perfil.findOneAndUpdate({ _id: _id }, { $set: { nombre: nombre } }, { $set: { fecha_nacimiento: fecha_nacimiento } }, { $set: { genero: genero } }, { $set: { altura: altura } }, { $set: { peso: peso } }, { $set: { foto: foto } }, { useFindAndModify: false, new: true }, function (err, doc) {
     res.json(doc);
 
 
 });
 });
-
-module.exports = router;
-
-var express = require('express');
-var router = express.Router();
-var mongoose = require('mongoose');
-
-var Perfil = require("../schemas/Logros.js");
 
 router.post('/buscar-logros', function (req, res) {
     var idUsuario = req.body.idUsuario;
@@ -70,7 +63,7 @@ router.post('/insertar-logros', function (req, res) {
         correo: req.body.correo
     });
 
-    logroNuevo.save()
+    logrosNuevo.save()
         .then(
             function (result) {
                 res.json(result);
