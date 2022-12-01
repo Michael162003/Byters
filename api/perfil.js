@@ -68,7 +68,6 @@ router.post('/insertar-logros', function (req, res) {
         tipo: req.body.tipo,
         estado: req.body.estado,
         correo: req.body.correo
-
     });
 
     logroNuevo.save()
