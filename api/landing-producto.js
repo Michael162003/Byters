@@ -1,13 +1,12 @@
 var express = require('express');
 var mongoose = require('mongoose');
-const Perfil = require('../schemas/Perfil.js');
 var router = express.Router();
 
-var perfil = require('../schemas/Perfil.js');
+var perfil = require('../schemas/perfil.js');
 
 router.post('/buscar', function(req, res) {
     var idUsuario = req.body.idUsuario;
-    Perfil.findById(idUsuario).exec()
+    perfil.findById(idUsuario).exec()
       .then(
         function(result) {
           res.json(result);
@@ -16,7 +15,7 @@ router.post('/buscar', function(req, res) {
   });
 
 router.post('/insertar', function(req, res) {
-  var perfilNuevo = new Perfil({
+  var perfilNuevo = new perfil({
     _id: new mongoose.Types.ObjectId(),
     nombre: req.body.nombre,
     correo: req.body.correo,
