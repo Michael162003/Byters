@@ -36,6 +36,53 @@ body {
 .header-perfil {
     text-align: end;
 }
+.container{
+    width: 500px;
+    padding: 20px;
+    background: white;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.titulo{
+    text-align: center;
+    border: solid #FF6C2B 1px;
+   border-style: dashed;
+   padding: 15px;
+   font-family: 'Ethnocentric Rg', sans-serif;
+   font-size: medium;
+}
+.padre{
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.nombre,.edad,.correo,.fechanacimiento,.genero,.altura,.peso{
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    padding: 10px;
+}
+.cuenta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.boton{
+    background-color: #FF6C2B;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+}
+
 
 /*Navbar Menu*/
 .capa-navbar {
@@ -59,8 +106,10 @@ body {
 .foto-perfil,
 .info-perfil {
     width: 50%;
+    padding-bottom: 100px;
 }
 .foto-perfil img {
+    padding-top: 50px;
     width: inherit;
     padding-left: 30%;
 }
@@ -71,6 +120,15 @@ body {
 .info-perfil h2{
     padding-bottom: 2%;
     font-family: 'Montserrat', sans-serif;
+}
+
+  
+.botonfoto{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-right: 200px;
 }
 
 /*grafico*/

@@ -177,19 +177,24 @@ div {
     width: 50%;
 }
 .ini img {
-    padding-left: 80%;
-    width: 20%;
-    padding-top: 4%;
+    padding-left: 400px;
+    text-align: center;
+    width: 50%;
+    
 }
 
 .regis img {
-    padding-left: 2%;
-    width: 18%;
-    padding-top: 4%;
+    text-align: center;
+    padding-right: 200px;
+    width: 50%;
+  
 }
-.botones-abajo {
+.botones-abajo h2 h4{
+    padding-top: 30px;
+    text-align: center;
     padding-bottom: 4%;
     padding-top: 3%;
+    padding-right: 200px;
 }
 
 /*Parte del Footer*/
