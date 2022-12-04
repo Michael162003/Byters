@@ -5,7 +5,7 @@ var logroSchema = mongoose.Schema({
     titulo: String,
     tipo: String,
     estado: String,
-    correo: String
+    idUsuario: String
 });
 
 //Permite que node pueda leer el archivo

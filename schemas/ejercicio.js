@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var ejercicioSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    correo: String,
+    idUsuario: String,
     tipo_ejercicio: String,
     fecha: String,
     duracion: String

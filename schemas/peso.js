@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 
 var pesoSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    correo: String,
-    peso: Number,
+    idUsuario: String,
+    pesoDia: Number,
     fecha: String
 });
 

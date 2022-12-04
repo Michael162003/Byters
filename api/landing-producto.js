@@ -4,17 +4,17 @@ var router = express.Router();
 
 var perfil = require('../schemas/perfil.js');
 
-router.post('/buscar', function(req, res) {
-    var idUsuario = req.body.idUsuario;
-    perfil.findById(idUsuario).exec()
-      .then(
-        function(result) {
-          res.json(result);
-        }
-      );
-  });
+router.post('/buscar', function (req, res) {
+  var idUsuario = req.body.idUsuario;
+  perfil.findById(idUsuario).exec()
+    .then(
+      function (result) {
+        res.json(result);
+      }
+    );
+});
 
-router.post('/insertar', function(req, res) {
+router.post('/insertar', function (req, res) {
   var perfilNuevo = new perfil({
     _id: new mongoose.Types.ObjectId(),
     nombre: req.body.nombre,
@@ -28,7 +28,7 @@ router.post('/insertar', function(req, res) {
 
   perfilNuevo.save()
     .then(
-      function(result) {
+      function (result) {
         res.json(result);
       }
     );
