@@ -41,15 +41,17 @@
             <div class="ejer">
                 <img src="../Media/ejercicio.jpeg">
                 <p>¡Tenemos categoría de ejercicios donde podrás utilizarlas sin repeticiones limitadas!</p>
-             
+
             </div>
             <div class="receta">
                 <img src="../Media/recetas.jpeg">
-                <p>¡Tenemos una variedad de recetas en nuestra aplicación explicandote como preparar cada receta y el tiempo de preparación!</p>
+                <p>¡Tenemos una variedad de recetas en nuestra aplicación explicandote como preparar cada receta y el
+                    tiempo de preparación!</p>
             </div>
             <div class="calendario">
                 <img src="../Media/registro avances.jpeg">
-                <p>¡Podrás guardar tus avances en la aplicación permitiéndote guardar tu peso del dia, el ayuno realizado y el tipo de ejercicio que realizó!</p>
+                <p>¡Podrás guardar tus avances en la aplicación permitiéndote guardar tu peso del dia, el ayuno
+                    realizado y el tipo de ejercicio que realizó!</p>
             </div>
         </div>
         <div class="wrapper">
@@ -65,24 +67,72 @@
     </div>
 
 
-        <!-- Y Mucho Mas -->
-        <div class="botones-abajo">
-            <h2>¡Y Mucho Mas!</h2>
-            <h4>Ya Estas Listo?</h4>
-            <div class="wrapper">
-                <div class="ini">
-                    <a href="./ayuno.html">
-                        <img src="../Media/login.png" alt="">
-                    </a>
-    
+    <!-- Y Mucho Mas -->
+    <div class="botones-abajo">
+        <h2>¡Y Mucho Mas!</h2>
+        <h4>Ya Estas Listo?</h4>
+        <div class="wrapper">
+            <div class="ini">
+                <a href="#formulario-inicio" class="boton-iniciar">Iniciar Sesion</a>
+
+                <div class="overlay" id="formulario-inicio">
+                    <div class="wrapper-formulario">
+                        <h3>Ingrese el correo de su cuenta</h3>
+                        <a href="#" class="boton-cerrar">&times;</a>
+                        <div class="contenido-formulario">
+                            <div class="contenedor-estilo">
+                                <form>
+                                    <label>Correo electrónico</label>
+                                    <input type="email" id="email-inicio" placeholder="Tu correo electronico" required>
+
+                                    <input type="submit" value="Enviar" id="iniciar" onclick="ingresar()" >
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="regis">
-                    <a href="./ayuno.html">
-                        <img src="../Media/registrar.png" alt="">
-                    </a>
+
+            </div>
+            <div class="regis">
+                <a href="#formulario-personal" class="boton-registrar">Registrate</a>
+
+                <div class="overlay" id="formulario-personal">
+                    <div class="wrapper-formulario">
+                        <h3>Complete el formulario con su informacion personal:</h3>
+                        <a href="#" class="boton-cerrar">&times;</a>
+                        <div class="contenido-formulario">
+                            <div class="contenedor-estilo">
+                                <form>
+                                    <label>Correo electrónico</label>
+                                    <input type="email" id="email-registro" placeholder="Tu correo electronico" required>
+
+                                    <label>Nombre Completo</label>
+                                    <input type="text" id="nombre" placeholder="Tu nombre y apellido" required>
+
+                                    <label>Género</label>
+                                    <input type="text" id="genero" placeholder="Tu sexo" required>
+
+                                    <label>Fecha de Nacimiento</label>
+                                    <input type="date" id="fecha" placeholder="Tu fecha de nacimiento" required>
+
+                                    <label>Peso Actual</label>
+                                    <input type="number" id="peso" placeholder="Tu peso actual" required>
+
+                                    <label>Altura</label>
+                                    <input type="number" id="altura" placeholder="Tu altura" required>
+
+                                    <label>Foto de Perfil</label>
+                                    <input type="file" required id="imagen_input" accept="image/png, image/jpg">
+                                    <div id="mostrar-imagen"></div>
+                                    <input type="submit" value="Enviar" id="registrar" onclick="anadir()" >
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- Footer(info de empresa) -->
     <div class="capa-footer1">
@@ -98,15 +148,15 @@
                     <div class="nombre-red">
                         <a href="https://twitter.com"> <i class="fa-brands fa-twitter fa-xl"></i></a>
                     </div>
-    
+
                     <div class="nombre-red">
                         <a href="https://instagram.com"><i class="fa-brands fa-instagram fa-xl"></i></a>
                     </div>
-    
+
                     <div class="nombre-red">
                         <a href="https://facebook.com"><i class="fa-brands fa-facebook fa-xl"></i></a>
                     </div>
-    
+
                 </div>
 
             </div>
@@ -117,10 +167,10 @@
     <div class="capa-footer2">
         <div class="wrapper">
             <div class="copyright">
-                    <div class="texto-copyright">
+                <div class="texto-copyright">
 
-                        <p><i class="fa-regular fa-copyright"></i> Copyright | Diseñado por Byters</p>
-                    </div>
+                    <p><i class="fa-regular fa-copyright"></i> Copyright | Diseñado por Byters</p>
+                </div>
             </div>
             <div class="sobre-nosotros">
                 <a href="../index.html">Sobre Nosotros</a>
@@ -128,5 +178,7 @@
         </div>
     </div>
 </body>
+
+<script src="../Javascript/landing_producto.js"></script>
 
 </html>
