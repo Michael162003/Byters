@@ -3,17 +3,17 @@ var mongoose = require('mongoose');
 var router = express.Router();
 
 var perfil = require('../schemas/perfil.js');
-
+/* ruta utilizada para buscar cuentas en la base de datos*/
 router.post('/buscar', function (req, res) {
-  var idUsuario = req.body.idUsuario;
-  perfil.findById(idUsuario).exec()
+  var correo = req.body.correo;
+  perfil.where({"correo": correo}).exec()
     .then(
       function (result) {
         res.json(result);
       }
     );
 });
-
+/* ruta utilizada para guardar cuentas nuevas en la base de datos */
 router.post('/insertar', function (req, res) {
   var perfilNuevo = new perfil({
     _id: new mongoose.Types.ObjectId(),

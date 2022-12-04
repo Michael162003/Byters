@@ -176,16 +176,14 @@ div {
 .regis {
     width: 50%;
 }
-.ini img {
-    padding-left: 80%;
-    width: 20%;
-    padding-top: 4%;
+.ini  {
+    text-align: end;
+    padding-right: 2%
 }
 
-.regis img {
+.regis {
     padding-left: 2%;
-    width: 18%;
-    padding-top: 4%;
+
 }
 .botones-abajo {
     padding-bottom: 4%;
@@ -240,6 +238,122 @@ div {
 .nombre-red a {
     text-decoration: none;
     color: white;
+}
+
+/*CSS para el pop up*/
+.boton-registrar{
+    font-size: 1em;
+    padding: 15px 48px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    background: #403e3d;
+    border-radius: 50px;
+}
+.boton-iniciar{
+    font-size: 1em;
+    padding: 15px 35px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    background: #403e3d;
+    border-radius: 50px;
+}
+
+.overlay{ 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    Left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper-formulario{ 
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0s ease-in-out;
+    text-align: start;
+}
+
+.wrapper-formulario h3{
+    margin-top: 0;
+    color: #333;
+}
+
+.wrapper-formulario .boton-cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper-formulario .contenido-formulario{
+    max-height: 70%;
+    overflow: auto;
+}
+
+.contenedor-estilo{
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 0px 0;
+}
+
+.form label{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=file]{
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"]{
+    background-color: #413b3b;
+    color: #fff;
+    padding: 15px 50px;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#mostrar-imagen{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+
 }
 
 /*CSS para la parte del copyright*/
@@ -334,4 +448,15 @@ div {
      .sobre-nosotros {
          padding-top: 6%;
      }
+
+     .wrapper-formulario {
+        margin: 10px auto;
+        width: 70%;
+        ;
+    }
+        
+    .wrapper-formulario .boton-cerrar {
+        top: -5px;
+        right: 5px;
+    }    
 }
