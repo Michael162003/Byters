@@ -11,7 +11,8 @@ router.post("/insertar", function(req, res){
         tipo: req.body.tipo,
         ingredientes: req.body.ingredientes,
         instrucciones: req.body.instrucciones,
-        id: req.body.idUsuario
+        idUsuario: req.body.idUsuario,
+        foto: req.body.foto
     });
     recetaNueva.save()
     .then(
