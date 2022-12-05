@@ -65,13 +65,28 @@ body {
     padding-bottom: 3%;
     text-align: center;
 }
-
-.capa-recetas h1 {
+.fotos{
+    width: 70%;
+}
+.titulo-recetas h1 {
     font-family: 'Ethnocentric Rg', sans-serif;
     color: #FF6C2B;
     padding-bottom: 5%;
 }
-
+.estilo-nombres {
+    font-family:'Montserrat', sans-serif
+}
+.comida, .texto {
+    width: 50%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 6%;
+}
+.texto {
+    text-align: start;
+    padding-right: 5%;
+    font-family: 'Roboto', sans-serif;
+}
 .capa-recetas button {
     background-color: #FF6C2B;
     padding-left: 30px;

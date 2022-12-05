@@ -11,15 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!-- Quattrocentro -->
+    <!-- Monserrat Bold -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quattrocento&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../CSS/recetas_personalizadas.css" type="text/css">
+
     <title>Recetas Personalizadas</title>
 </head>
 
-<body>
+<body onload="cargar_recetas()">
     <!-- Header -->
     <div class="wrapper">
         <div class="header-logo">
@@ -49,7 +52,12 @@
     </div>
 
     <div class="capa-recetas">
-        <h1>Recetas Personalizadas</h1>
+        <div class="titulo-recetas">
+            <h1>Recetas Personalizadas</h1>
+        </div>
+
+        <div class="wrapper" id="receta-personalizada">
+        </div>
         <a href="./registrar_receta.html">
             <button>
                 <h3>Añadir receta</h3>
@@ -57,8 +65,8 @@
         </a>
     </div>
 
-     <!-- Footer(info de empresa) -->
-     <div class="capa-footer1">
+    <!-- Footer(info de empresa) -->
+    <div class="capa-footer1">
         <div class="wrapper">
             <div class="footer-info">
                 <h3>Información sobre la compañía</h3>
@@ -71,15 +79,15 @@
                     <div class="nombre-red">
                         <a href="https://twitter.com"> <i class="fa-brands fa-twitter fa-xl"></i></a>
                     </div>
-    
+
                     <div class="nombre-red">
                         <a href="https://instagram.com"><i class="fa-brands fa-instagram fa-xl"></i></a>
                     </div>
-    
+
                     <div class="nombre-red">
                         <a href="https://facebook.com"><i class="fa-brands fa-facebook fa-xl"></i></a>
                     </div>
-    
+
                 </div>
 
             </div>
@@ -90,16 +98,17 @@
     <div class="capa-footer2">
         <div class="wrapper">
             <div class="copyright">
-                    <div class="texto-copyright">
+                <div class="texto-copyright">
 
-                        <p><i class="fa-regular fa-copyright"></i> Copyright | Diseñado por Byters</p>
-                    </div>
+                    <p><i class="fa-regular fa-copyright"></i> Copyright | Diseñado por Byters</p>
+                </div>
             </div>
             <div class="sobre-nosotros">
                 <a href="../index.html">Sobre Nosotros</a>
             </div>
         </div>
     </div>
+<script src="../Javascript/recetas_personalizadas.js"></script>    
 </body>
 
 </html>
