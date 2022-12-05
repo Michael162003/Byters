@@ -6,7 +6,8 @@ var recetaSchema = mongoose.Schema({
     tipo: String,
     ingredientes: String,
     instrucciones: String,
-    idUsuario: String
+    idUsuario: String,
+    foto: String
 });
 
 //Permite que node pueda leer el archivo
