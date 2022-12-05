@@ -64,26 +64,51 @@ body {
 }
 
 .boton-anadir {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 18%;
+    padding-bottom: 3%;
 }
 
-.boton-anadir button,
-.receta-imagen button {
+.boton-anadir input {
     background-color: #FF6C2B;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
-.receta-imagen,
+#mostrar-imagen{
+    margin-left: 28%;
+    width: 45%;
+    height: 120%;
+    border: 1px solid black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+input[type=file]{
+width: 100%;
+padding: 3px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: none;
+}
+
+
 .receta-formulario {
-    width: 50%;
     padding-top: 1%;
 }
 
+.imagen-receta, .informacion-receta {
+    width: 50%;
+}
 .receta-imagen img {
     width: 30%;
     padding-top: 15%;
@@ -99,7 +124,7 @@ body {
     background-color: #eeeeee;
 }
 
-.receta-formulario input {
+.receta-formulario input[type=file], .receta-formulario input[type=text], .receta-formulario input[type=textarea] {
     width: 50%;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -203,9 +228,12 @@ body {
         padding-bottom: 3%;
     }
 
-    .receta-imagen,
-    .receta-formulario {
+    .imagen-receta,
+    .informacion-receta {
         width: 100%;
+    }
+    .informacion-receta {
+        padding-top: 80%;
     }
 
     .receta-imagen {
