@@ -12,6 +12,7 @@ app.use(express.json())
 var folder = path.join(__dirname, "public"); // Creo la variable con la carpeta public
 
 //Servicio que contiene las rutas
+// app.use('/fileupload', require('./api/recetas.js'));
 app.use('/recetas', require('./api/recetas.js'));
 app.use('/calendario', require('./api/calendario.js'));
 app.use('/landing-producto', require('./api/landing-producto.js'));

@@ -50,13 +50,13 @@
 
     <div class="capa-registrar">
         <h1>Ingresa la receta</h1>
-        <form>
+        <form> <!-- <form action="http://localhost:5000/fileupload" method="post" enctype="multipart/form-data"> -->
             <div class="receta-formulario">
  
                     <div class="wrapper">
                         <div class="imagen-receta">
                             <h2>Imagen de la receta</h2>
-                            <input type="file" required id="imagen_input" accept="image/png, image/jpg">
+                            <input type="file" required id="imagen_input" accept="image/png, image/jpg" name="filetoupload">
                             <div id="mostrar-imagen"></div>
                             
                             <h2>Nombre de la receta</h2>
