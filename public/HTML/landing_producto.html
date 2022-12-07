@@ -72,9 +72,9 @@
         <h2>¡Y Mucho Mas!</h2>
         <h4>Ya Estas Listo?</h4>
         <div class="wrapper">
+            <!-- Formulario de inicio de sesion -->
             <div class="ini">
                 <a href="#formulario-inicio" class="boton-iniciar">Iniciar Sesion</a>
-
                 <div class="overlay" id="formulario-inicio">
                     <div class="wrapper-formulario">
                         <h3>Ingrese el correo de su cuenta</h3>
@@ -85,17 +85,17 @@
                                     <label>Correo electrónico</label>
                                     <input type="email" id="email-inicio" placeholder="Tu correo electronico" required>
 
-                                    <input type="submit" value="Enviar" id="iniciar" onclick="ingresar()" >
+                                    <input type="button" value="Enviar" id="iniciar" onclick="ingresar()" >
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+            
+            <!-- Formulario de registrar cuenta -->
             <div class="regis">
                 <a href="#formulario-personal" class="boton-registrar">Registrate</a>
-
                 <div class="overlay" id="formulario-personal">
                     <div class="wrapper-formulario">
                         <h3>Complete el formulario con su informacion personal:</h3>
@@ -109,8 +109,12 @@
                                     <label>Nombre Completo</label>
                                     <input type="text" id="nombre" placeholder="Tu nombre y apellido" required>
 
-                                    <label>Género</label>
-                                    <input type="text" id="genero" placeholder="Tu sexo" required>
+                                    <label>Género</label><br>
+                                    <select id="genero">
+                                        <option hidden disabled selected>Tu género</option>
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                    </select>
 
                                     <label>Fecha de Nacimiento</label>
                                     <input type="date" id="fecha" placeholder="Tu fecha de nacimiento" required>
@@ -118,13 +122,13 @@
                                     <label>Peso Actual</label>
                                     <input type="number" id="peso" placeholder="Tu peso actual" required>
 
-                                    <label>Altura</label>
-                                    <input type="number" id="altura" placeholder="Tu altura" required>
+                                    <label>Altura Actual</label>
+                                    <input type="number" id="altura" placeholder="Tu altura actual" required>
 
                                     <label>Foto de Perfil</label>
                                     <input type="file" required id="imagen_input" accept="image/png, image/jpg">
                                     <div id="mostrar-imagen"></div>
-                                    <input type="submit" value="Enviar" id="registrar" onclick="anadir()" >
+                                    <input type="button" value="Enviar" id="registrar" onclick="anadir()" >
                                 </form>
                             </div>
                         </div>

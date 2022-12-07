@@ -17,14 +17,32 @@ function anadir_receta() {
         idUsuario: localStorage.getItem("idUsuario"),
         foto: document.getElementById("imagen_input").value
     }
-    fetch('http://localhost:5000/recetas/insertar',  {
+    fetch('http://localhost:5000/recetas/insertar', {
         method: "POST",
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' }
     })
-    .then(
-        function(response) {
-            return response.json();
-        }
-    )
+        .then(
+            function (response) {
+                return response.json();
+            }
+        )
+        .then(
+            function (json) {
+                data = {
+                    form: document.getElementById("imagen_input")
+                }
+                fetch('http://localhost:5000/recetas/imagen', {
+                    method: "POST",
+                    body: JSON.stringify(data),
+                    headers: { 'Content-Type': 'application/json' }
+
+                })
+                    .then(
+                        function (response) {
+                            return response.json();
+                        }
+                    )
+            }
+        )
 }
