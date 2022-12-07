@@ -19,7 +19,7 @@
     <title>Perfil</title>
 </head>
 
-<body>
+<body onload="cargar_info()">
     <!-- Header -->
     <div class="wrapper">
         <div class="header-logo">
@@ -54,16 +54,48 @@
             <div class="foto-perfil">
                 <img src="../Media/profile.jpg" alt="">
             </div>
-            <div class="info-perfil">
-                <h2><i class="fa-solid fa-user"></i> Nombre: Guillermo Rojas</h2>
-                <h2><i class="fa-solid fa-cake-candles"></i> Fecha de Nacimiento: 15/05/92</h2>
-                <h2><i class="fa-regular fa-calendar-days"></i> Edad: 30</h2>
-                <h2><i class="fa-solid fa-venus-mars"></i> Genero: Masculino</h2>
-                <h2><i class="fa-solid fa-person-arrow-up-from-line"></i> Altura Actual: 1.72</h2>
-                <h2><i class="fa-solid fa-weight-scale"></i> Peso Actual: 60Kg</h2>
-                <h2><i class="fa-solid fa-notes-medical"></i> IMC Actual: 20.3</h2>
+
+            <div class="info-perfil" id="info-perfil">
+                <div class="overlay" id="formulario-personal">
+                    <div class="wrapper-formulario">
+                        <h3>Complete el formulario con su informacion personal:</h3>
+                        <a href="#" class="boton-cerrar">&times;</a>
+                        <div class="contenido-formulario">
+                            <div class="contenedor-estilo">
+                                <form>
+                                    <label>Nombre Completo</label>
+                                    <input type="text" id="nombre" placeholder="Tu nombre y apellido" required>
+
+                                    <label>Género</label><br>
+                                    <select id="genero">
+                                        <option hidden disabled selected>Tu género</option>
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                    </select>
+
+                                    <label>Fecha de Nacimiento</label>
+                                    <input type="date" id="fecha" placeholder="Tu fecha de nacimiento" required>
+
+                                    <label>Peso Actual</label>
+                                    <input type="number" id="peso" placeholder="Tu peso actual" required>
+
+                                    <label>Altura Actual</label>
+                                    <input type="number" id="altura" placeholder="Tu altura actual" required>
+
+                                    <label>Foto de Perfil</label>
+                                    <input type="file" required id="imagen_input" accept="image/png, image/jpg">
+                                    <div id="mostrar-imagen"></div>
+                                    <input type="button" value="Enviar" id="registrar" onclick="actualizar()" >
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </div>
+ 
+
     </div>
 
     <!-- Grafico -->
@@ -77,8 +109,9 @@
     <!-- Agua -->
     <div class="capa-agua">
         <div class="wrapper">
-            <div class="h1-agua">
-                <h1>Cantidad de agua recomendada=</h1>
+            <div class="h1-agua" id="agua_cant">
+                <h1 class="titulo-agua">Cantidad de agua recomendada=</h1>
+
             </div>
             <div class="img-agua">
                 <div class="wrapper">
@@ -104,51 +137,62 @@
 
     <div class="capa-logros">
         <div class="capa-lobtenidos">
-            <h1>Logros Obtenidos</h1>
-            <div class="wrapper">
-                <div class="w-logros">
-                    <img src="../Media/peso-logro.png" alt="">
-                    <h2>Llegar a 58kg</h2>
-                </div>
-                <div class="w-logros">
-                    <img src="../Media/ayuno-intermitente.png" alt="">
-                    <h2>Hacer ayuno de 16 horas</h2>
-                </div>
-                <div class="w-logros">
-                    <img src="../Media/imc-foto.png" alt="">
-                    <h2> Llegar a IMC de 20.8</h2>
-                </div>
-                <div class="w-logros">
-                    <img src="../Media/ayuno-dias.png" alt="">
-                    <h2>Hacer ayuno por 5 dias</h2>
-                </div>
+            <h1>Logros Completados</h1>
+            <div class="wrapper" id="logros-obtenidos">
+                
             </div>
         </div>
-        <div class="capa-lpendientes">
+        <div class="capa-lpendientes" >
             <h1>Logros Pendientes</h1>
-            <div class="wrapper">
+            <div class="wrapper" id="logros-pendientes">
 
-                <div class="w-logros">
-                    <img src="../Media/ayuno-intermitente.png" alt="">
-                    <h2>Hacer ayuno de 18 horas</h2>
-                </div>
-                <div class="w-logros">
-                    <img src="../Media/ayuno-dias.png" alt="">
-                    <h2>Hacer ayuno por una semana</h2>
-                </div>
-                <div class="w-logros">
-                    <img src="../Media/peso-logro.png" alt="">
-                    <h2>Llegar a 62kg</h2>
-                </div>
-                <div class="w-logros">
-                    <img src="../Media/imc-foto.png" alt="">
-                    <h2>Llegar a IMC de 21.8</h2>
+               
+            </div>
+        </div>
+        <a href="#formulario-logro" class="boton-logro">Añadir Nuevo Logro</a>
+        <div class="overlay" id="formulario-logro">
+            <div class="wrapper-formulario">
+                <h3>Ingrese el correo de su cuenta</h3>
+                <a href="#" class="boton-cerrar">&times;</a>
+                <div class="contenido-formulario">
+                    <div class="contenedor-estilo">
+                        <form>
+                            <label>Título del logro</label>
+                            <input type="text" id="titulo" placeholder="Ej: Llegar a 63Kg" required>
+
+                            <label>Tipo de logro</label>
+                            <select id="tipo-logro">
+                                <option hidden selected disabled>- Selecciona un tipo de logro -</option>
+                                <option>Reducción o Subida de Peso</option>
+                                <option>Reducción o Aumento del IMC</option>
+                                <option>Cantidad de Horas de Ayuno</option>
+                                <option>Cantidad de Días de Ayuno</option>
+                            </select>
+                            <input type="button" value="Añadir Logro" id="reg_logro" onclick="anadir_logro()" >
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <button>
-            <h3>Añadir nuevo logro</h3>
-        </button>
+    </div>
+    <div class="overlay" id="formulario-estado">
+        <div class="wrapper-formulario">
+            <h3>Actualice el Estado del Logro</h3>
+            <a href="#" class="boton-cerrar">&times;</a>
+            <div class="contenido-formulario">
+                <div class="contenedor-estilo">
+                    <form>
+                        <label>Estado del Logro</label>
+                        <select id="estado-logro" required>
+                            <option hidden selected disabled>- Seleccione el estado del logro -</option>
+                            <option>Pendiente</option>
+                            <option>Completado</option>
+                        </select>
+                        <input type="button" value="Actualizar Logro" id="estado_logro" onclick="actualizar_logro()" >
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer(info de empresa) -->
@@ -194,6 +238,7 @@
             </div>
         </div>
     </div>
+    <script src="../Javascript/perfil.js"></script>
 </body>
 
 </html>

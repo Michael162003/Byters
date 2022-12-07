@@ -34,18 +34,18 @@ router.post('/buscar', function (req, res) {
     );
 });
 
-// router.post('/', function (req, res) {
-//   var form = new formidable.IncomingForm()
+router.post('/imagen', function (req, res) {
+  var form = new formidable.IncomingForm()
   
-//   form.parse(req, function (err, fields, files) {
-//     var oldpath = files.filetoupload.filepath;
-//     var newpath = 'D:/Desktop/iteracion3/Byters/public/Media' + files.filetoupload.originalFilename;
-//     fs.rename(oldpath, newpath, function(err){
-//       if(err) throw err;
-//       res.write('File uploaded and moved!');
-//       res.end();
-//     });
-//   });
-// });
+  form.parse(req, function (err, fields, files) {
+    var oldpath = files.filetoupload.filepath;
+    var newpath = '../public/Media/' + files.filetoupload.originalFilename;
+    fs.rename(oldpath, newpath, function(err){
+      if(err) throw err;
+      res.write('File uploaded and moved!');
+      res.end();
+    });
+  });
+});
 
 module.exports = router;

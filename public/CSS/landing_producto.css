@@ -323,7 +323,7 @@ div {
     letter-spacing: 3px;
 }
 
-input[type=text], input[type=email], input[type=number], input[type=date], input[type=file]{
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=file], select{
     width: 100%;
     padding: 3px;
     border: 1px solid #ccc;
@@ -334,7 +334,7 @@ input[type=text], input[type=email], input[type=number], input[type=date], input
     resize: vertical;
 }
 
-input[type="submit"]{
+input[type="button"]{
     background-color: #413b3b;
     color: #fff;
     padding: 15px 50px;
