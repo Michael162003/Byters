@@ -14,7 +14,7 @@ var folder = path.join(__dirname, "public"); // Creo la variable con la carpeta 
 //Servicio que contiene las rutas
 // app.use('/fileupload', require('./api/recetas.js'));
 app.use('/recetas', require('./api/recetas.js'));
-app.use('/calendario', require('./api/calendario.js'));
+app.use('/calendario', require('./api/registros.js'));
 app.use('/landing-producto', require('./api/landing-producto.js'));
 app.use('/perfil', require('./api/perfil.js'));
 

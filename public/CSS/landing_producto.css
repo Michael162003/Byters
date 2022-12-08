@@ -167,7 +167,9 @@ div {
     text-align: center;
     font-family: 'Montserrat', sans-serif
 }
-
+.botones-abajo h4 {
+    padding-bottom: 2%;
+}
 .logros h3 {
     color: black;
 }
@@ -186,7 +188,7 @@ div {
 
 }
 .botones-abajo {
-    padding-bottom: 4%;
+    padding-bottom: 6%;
     padding-top: 3%;
 }
 
@@ -241,26 +243,24 @@ div {
 }
 
 /*CSS para el pop up*/
-.boton-registrar{
+.boton-registrar, .boton-iniciar{
     font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    background: #FF6C2B;
+    border-radius: 50px;
+    border: solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+.boton-registrar {
     padding: 15px 48px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.1s ease-out;
-    background: #403e3d;
-    border-radius: 50px;
 }
-.boton-iniciar{
-    font-size: 1em;
+.boton-iniciar {
     padding: 15px 35px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.1s ease-out;
-    background: #403e3d;
-    border-radius: 50px;
 }
+
 
 .overlay{ 
     position: fixed;
@@ -272,6 +272,7 @@ div {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .overlay:target{

@@ -25,7 +25,7 @@ router.post('/actualizar-perfil', function (req, res) {
     var foto = req.body.foto
 
     // findOneAndUpdate - Filtro - Valores - Opciones - Función anónima
-    perfil.findOneAndUpdate({ idUsuario: idUsuario }, { $set: { nombre: nombre, fecha_nacimiento: fecha_nacimiento, genero: genero, altura: altura, peso: peso, foto: foto} },  function (err, doc) {
+    perfil.findOneAndUpdate({ _id: idUsuario }, { $set: { nombre: nombre, fecha_nacimiento: fecha_nacimiento, genero: genero, altura: altura, peso: peso, foto: foto} },  function (err, doc) {
         res.json(doc);
     });
 });

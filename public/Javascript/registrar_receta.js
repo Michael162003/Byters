@@ -9,40 +9,50 @@ image_input.addEventListener("change", function () {
     reader.readAsDataURL(this.files[0]);
 });
 function anadir_receta() {
-    data = {
-        titulo: document.getElementById("titulo").value,
-        tipo: document.getElementById("tipo").value,
-        ingredientes: document.getElementById("ingredientes").value,
-        instrucciones: document.getElementById("instrucciones").value,
-        idUsuario: localStorage.getItem("idUsuario"),
-        foto: document.getElementById("imagen_input").value
-    }
-    fetch('http://localhost:5000/recetas/insertar', {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { 'Content-Type': 'application/json' }
-    })
-        .then(
-            function (response) {
-                return response.json();
-            }
-        )
-        .then(
-            function (json) {
-                data = {
-                    form: document.getElementById("imagen_input")
+    var titulo = document.getElementById("titulo").value;
+    var tipo = document.getElementById("tipo").value;
+    var ingredientes = document.getElementById("ingredientes").value;
+    var instrucciones = document.getElementById("instrucciones").value;
+    var idUsuario = localStorage.getItem("idUsuario");
+    var foto = document.getElementById("imagen_input").value;
+    if (titulo.length === 0 || tipo.length === 0 || ingredientes.length === 0 || instrucciones.length === 0 || foto.length === 0) {
+        alert("Porfavor llene todas las casillas solicitadas")
+    } else {
+        data = {
+            titulo: document.getElementById("titulo").value,
+            tipo: document.getElementById("tipo").value,
+            ingredientes: document.getElementById("ingredientes").value,
+            instrucciones: document.getElementById("instrucciones").value,
+            idUsuario: localStorage.getItem("idUsuario"),
+            foto: document.getElementById("imagen_input").value
+        }
+        fetch('http://localhost:5000/recetas/insertar', {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: { 'Content-Type': 'application/json' }
+        })
+            .then(
+                function (response) {
+                    return response.json();
                 }
-                fetch('http://localhost:5000/recetas/imagen', {
-                    method: "POST",
-                    body: JSON.stringify(data),
-                    headers: { 'Content-Type': 'application/json' }
+            )
+            .then(
+                function (json) {
+                    data = {
+                        form: document.getElementById("imagen_input")
+                    }
+                    fetch('http://localhost:5000/recetas/imagen', {
+                        method: "POST",
+                        body: JSON.stringify(data),
+                        headers: { 'Content-Type': 'application/json' }
 
-                })
-                    .then(
-                        function (response) {
-                            return response.json();
-                        }
-                    )
-            }
-        )
+                    })
+                        .then(
+                            function (response) {
+                                return response.json();
+                            }
+                        )
+                }
+            )
+    }
 }

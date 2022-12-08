@@ -190,6 +190,20 @@ body {
     .capa-recetas h1{
         font-size: 25px;
     }
+    .comida, .texto {
+        width: 100%;
+    }
+    .texto {
+        padding-top: 0%;
+        padding-left: 5%;
+    }
+    .comida {
+        padding-bottom: 0%;
+    }
+    .fotos {
+        width: 80%;
+        padding-top: 12%;
+    }
 
        /*Foooter*/
        .footer-info,

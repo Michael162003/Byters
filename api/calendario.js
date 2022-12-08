@@ -7,9 +7,8 @@ var peso = require("../schemas/peso.js");
 var ejercicio = require('../schemas/ejercicio.js')
 
 router.post('/buscar-ayuno', function (req, res) {
-  var fecha = req.body.fecha;
   var idUsuario = req.body.idUsuario;
-  ayuno.where({ "fecha": fecha, "idUsuario": idUsuario }).exec()
+  ayuno.where({"idUsuario": idUsuario }).exec()
     .then(
       function (result) {
         res.json(result);
@@ -18,9 +17,8 @@ router.post('/buscar-ayuno', function (req, res) {
 });
 
 router.post('/buscar-peso', function (req, res) {
-  var fecha = req.body.fecha;
   var idUsuario = req.body.idUsuario;
-  peso.where({ "fecha": fecha, "idUsuario": idUsuario }).exec()
+  peso.where({"idUsuario": idUsuario }).exec()
     .then(
       function (result) {
         res.json(result);
@@ -29,9 +27,8 @@ router.post('/buscar-peso', function (req, res) {
 });
 
 router.post('/buscar-ejercicio', function (req, res) {
-  var fecha = req.body.fecha;
   var idUsuario = req.body.idUsuario;
-  ejercicio.where({ "fecha": fecha, "idUsuario": idUsuario }).exec()
+  ejercicio.where({"idUsuario": idUsuario }).exec()
     .then(
       function (result) {
         res.json(result);
@@ -61,7 +58,7 @@ router.post('/insertar-peso', function (req, res) {
     _id: new mongoose.Types.ObjectId(),
     fecha: req.body.fecha,
     idUsuario: req.body.idUsuario,
-    peso: req.body.peso
+    pesoDia: req.body.pesoDia
   });
   pesoNuevo.save()
     .then(

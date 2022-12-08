@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/perfil.css" type="text/css">
     <script src="https://kit.fontawesome.com/960cf21d08.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <!-- Ethnocentric -->
     <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
     <!-- Roboto -->
@@ -58,7 +59,7 @@
             <div class="info-perfil" id="info-perfil">
                 <div class="overlay" id="formulario-personal">
                     <div class="wrapper-formulario">
-                        <h3>Complete el formulario con su informacion personal:</h3>
+                        <h3>Complete el formulario con su información personal:</h3>
                         <a href="#" class="boton-cerrar">&times;</a>
                         <div class="contenido-formulario">
                             <div class="contenedor-estilo">
@@ -85,7 +86,7 @@
                                     <label>Foto de Perfil</label>
                                     <input type="file" required id="imagen_input" accept="image/png, image/jpg">
                                     <div id="mostrar-imagen"></div>
-                                    <input type="button" value="Enviar" id="registrar" onclick="actualizar()" >
+                                    <input type="button" value="Actualizar" id="registrar" onclick="actualizar()" >
                                 </form>
                             </div>
                         </div>
@@ -99,11 +100,9 @@
     </div>
 
     <!-- Grafico -->
-    <div class="capa-grafico">
+    <div class="capa-grafico" >
         <h1>Gráfico</h1>
-        <div class="foto-grafico">
-            <img src="../Media/line-graph.png">
-        </div>
+        <canvas id="myChart" class="canva_style" ></canvas>
     </div>
 
     <!-- Agua -->
