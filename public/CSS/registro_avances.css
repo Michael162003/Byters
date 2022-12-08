@@ -53,15 +53,132 @@ body {
 /*Calendario*/
 .calendario {
     text-align: center;
-    font-family: 'Ethnocentric Rg', sans-serif;
-    padding-bottom: 6%;
+    padding-bottom: 5%;
 }
-.calendario h1 {
+.capa-form {
+    padding-bottom: 6%;
+    text-align: center;
+}
+.titulo-partes, .titulo-calendario {
+    font-family: 'Ethnocentric Rg', sans-serif;
+}
+.titulo-partes {
+    background-color: #FF6C2B;
+}
+.titulo-calendario {
     color: #FF6C2B;
 }
-.calen img {
-    /* padding-left: 34%; */
-    width: 50%;
+.tipografia-registro {
+    font-family: 'Roboto', sans-serif;
+}
+.w-tabla {
+    min-height: .01%;
+    overflow-x: auto;
+    padding-bottom: 5%;
+}
+.margen-tabla {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*CSS para el pop up*/
+.boton-registrar{
+    font-size: 16px;
+    padding: 15px 48px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    background: #FF6C2B;
+    border-radius: 50px;
+    border: solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+.overlay{ 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    Left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper-formulario{ 
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0s ease-in-out;
+    text-align: start;
+}
+
+.wrapper-formulario h3{
+    margin-top: 0;
+    color: #333;
+}
+
+.wrapper-formulario .boton-cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper-formulario .contenido-formulario{
+    max-height: 70%;
+    overflow: auto;
+}
+
+.contenedor-estilo{
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 0px 0;
+}
+
+.form label{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+input[type=text], input[type=email], input[type=number], input[type=date], input[type=file], select{
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="button"]{
+    background-color: #413b3b;
+    color: #fff;
+    padding: 15px 50px;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.a-tabla {
+    color: blue;
 }
 
 /*Parte del Footer*/
@@ -175,4 +292,14 @@ body {
     .sobre-nosotros {
         padding-top: 6%;
     }
+    .wrapper-formulario {
+        margin: 10px auto;
+        width: 70%;
+        ;
+    }
+        
+    .wrapper-formulario .boton-cerrar {
+        top: -5px;
+        right: 5px;
+    }    
 }

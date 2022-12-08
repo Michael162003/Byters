@@ -1,5 +1,3 @@
-const e = require("express");
-
 function cargar_info() {
     data = {
         idUsuario: localStorage.getItem("idUsuario")
@@ -21,7 +19,7 @@ function cargar_info() {
                 var nombre = "<h2><i class='fa-solid fa-user'></i> Nombre: " + json.nombre + "</h2>";
                 var fecha_nacimiento = "<h2><i class='fa-solid fa-cake-candles'></i> Fecha de Nacimiento: " + json.fecha_nacimiento + "</h2>";
                 var edad = "<h2><i class='fa-regular fa-calendar-days'></i> Edad: 30</h2>"
-                var genero = "<h2><i class='fa-solid fa-venus-mars'></i> Genero: " + json.genero + "</h2>";
+                var genero = "<h2><i class='fa-solid fa-venus-mars'></i> Género: " + json.genero + "</h2>";
                 var altura = "<h2><i class='fa-solid fa-person-arrow-up-from-line'></i> Altura Actual: " + json.altura + "cm</h2>";
                 var peso = "<h2><i class='fa-solid fa-weight-scale'></i> Peso Actual: " + json.peso + "Kg</h2>";
                 var calc_imc = (json.peso) / Math.pow((json.altura) / 100, 2);
@@ -95,6 +93,68 @@ function cargar_info() {
 
                         }
                     )
+                    .then(
+                        function () {
+
+                            data = {
+                                idUsuario: localStorage.getItem("idUsuario")
+                            }
+                            fetch('http://localhost:5000/calendario/buscar-registros', {
+                                method: "POST",
+                                body: JSON.stringify(data),
+                                headers: { 'Content-Type': 'application/json' }
+                            })
+                                .then(
+                                    function (response) {
+                                        return response.json()
+                                    }
+                                )
+                                .then(
+                                    function (json) {
+                                        // var xValues = [50,60,70,80,90,100,110,120,130,140,150];
+                                        // var yValues = [7,8,8,9,9,9,10,11,14,14,15];
+                                        var xValues = [];
+                                        var yValues = [];
+                                        var maxValor = json[0].pesoDia;
+                                        var minValor = json[0].pesoDia;
+                                        for(var cont = 0; cont<json.length; cont++){
+                                            xValues.push(json[cont].fecha);
+                                            yValues.push(parseInt(json[cont].pesoDia) )
+                                            if(maxValor < json[cont].pesoDia) {
+                                                maxValor = json[cont].pesoDia;
+                                            }
+                                            if(minValor > json[cont].pesoDia) {
+                                                minValor = json[cont].pesoDia;
+                                            }
+                                        }
+                                        
+                                        console.log(xValues)
+                                        console.log(yValues)
+                                        console.log(json[0].pesoDia)
+                                        new Chart("myChart", {
+                                            type: "line",
+                                            data: {
+                                                labels: xValues,
+                                                datasets: [{
+                                                    fill: false,
+                                                    lineTension: 0,
+                                                    backgroundColor: "rgba(0,0,255,1.0)",
+                                                    borderColor: "rgba(0,0,255,0.1)",
+                                                    data: yValues
+                                                }]
+                                            },
+                                            options: {
+                                                legend: { display: false },
+                                                scales: {
+                                                    yAxes: [{ ticks: { min: minValor, max: (maxValor + 3) } }],
+                                                }
+                                            }
+                                        });
+                                    }
+                                )
+
+                        }
+                    )
             }
         )
 }
@@ -103,7 +163,7 @@ function actualizar_logro() {
     var variables = new URLSearchParams(direccion);
     var id = variables.get("id");
     var estado = document.getElementById("estado-logro").value;
-    if(estado !== "- Seleccione el estado del logro -"){
+    if (estado !== "- Seleccione el estado del logro -") {
         data = {
             _id: id,
             estado: document.getElementById("estado-logro").value
@@ -124,22 +184,17 @@ function actualizar_logro() {
     } else {
         alert("Seleccione un estado valido")
     }
-    
+
 }
 
 function actualizar() {
-    var nombre = document.getElementById("nombre").value;
-    var fecha_nacimiento = document.getElementById("fecha").value;
-    var genero = document.getElementById("genero").value;
-    var altura = document.getElementById("altura").value;
-    var peso = document.getElementById("peso").value;
-    var foto = document.getElementById("imagen_input").value;
+
     data1 = {
         idUsuario: localStorage.getItem("idUsuario")
     }
     fetch('http://localhost:5000/perfil/buscar-perfil', {
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify(data1),
         headers: { 'Content-Type': 'application/json' }
     })
         .then(
@@ -149,13 +204,21 @@ function actualizar() {
         )
         .then(
             function (json) {
+                var nombre = document.getElementById("nombre").value;
+                var fecha_nacimiento = document.getElementById("fecha").value;
+                var genero = document.getElementById("genero").value;
+                var altura = document.getElementById("altura").value;
+                var peso = document.getElementById("peso").value;
+                var foto = document.getElementById("imagen_input").value;
+                console.log(peso)
+                console.log(altura)
                 if (nombre.length === 0) {
                     nombre = json.nombre;
                 };
                 if (fecha_nacimiento.length === 0) {
                     fecha_nacimiento = json.fecha_nacimiento;
                 };
-                if (genero.length === 0) {
+                if (genero === "Tu género") {
                     genero = json.genero;
                 };
                 if (fecha_nacimiento === 0) {
@@ -196,7 +259,7 @@ function actualizar() {
 function anadir_logro() {
     var titulo = document.getElementById('titulo').value;
     var tipo = document.getElementById('tipo-logro').value;
-    if(titulo.length === 0 || tipo === "- Selecciona un tipo de logro -") {
+    if (titulo.length === 0 || tipo === "- Selecciona un tipo de logro -") {
         alert("Porfavor llene todos los espacios requeridos")
     } else {
         data = {
@@ -216,10 +279,10 @@ function anadir_logro() {
                 }
             )
             .then(
-                alert("Se ha registrado el logro exitosamente") 
+                alert("Se ha registrado el logro exitosamente")
             )
     }
-    
+
 }
 function cargar_logros() {
     data = {
@@ -272,4 +335,29 @@ function cargar_logros() {
                 }
             }
         )
+}
+
+function grafico() {
+    var xValues = ["hola", 50, 70, 90, "prueba", 110, 120, 130, 140, 150];
+    var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                yAxes: [{ ticks: { min: 6, max: 16 } }],
+            }
+        }
+    });
 }
