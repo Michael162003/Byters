@@ -14,11 +14,17 @@ function cargar_info() {
         )
         .then(
             function (json) {
+                var annio = json.fecha_nacimiento.substring(6,10)
+                var edad = (2022 - parseInt(annio)).toString()
+ 
                 var info = document.getElementById("info-perfil");
                 var info_agua = document.getElementById("agua_cant");
+                var info_perfil = document.getElementById("foto-perfil")
+                var foto_perfil = "<img src='" + json.foto + "'>"
+                console.log("FOTOOOOO " + foto_perfil)
                 var nombre = "<h2><i class='fa-solid fa-user'></i> Nombre: " + json.nombre + "</h2>";
                 var fecha_nacimiento = "<h2><i class='fa-solid fa-cake-candles'></i> Fecha de Nacimiento: " + json.fecha_nacimiento + "</h2>";
-                var edad = "<h2><i class='fa-regular fa-calendar-days'></i> Edad: 30</h2>"
+                var edad = "<h2><i class='fa-regular fa-calendar-days'></i> Edad: " + edad + "</h2>"
                 var genero = "<h2><i class='fa-solid fa-venus-mars'></i> Género: " + json.genero + "</h2>";
                 var altura = "<h2><i class='fa-solid fa-person-arrow-up-from-line'></i> Altura Actual: " + json.altura + "cm</h2>";
                 var peso = "<h2><i class='fa-solid fa-weight-scale'></i> Peso Actual: " + json.peso + "Kg</h2>";
@@ -28,6 +34,7 @@ function cargar_info() {
                 var boton = "<h3><a href='#formulario-personal' class='boton-registrar'>Modificar Información</a></h3>"
                 var calc_agua = (((json.peso * 35) / 1000).toString()).substring(0, 4)
                 var agua = "<h1 class='cant-agua'>" + calc_agua + " Litros</h1>";
+                info_perfil.insertAdjacentHTML("beforeend", foto_perfil)
                 info.insertAdjacentHTML("beforeend", nombre);
                 info.insertAdjacentHTML("beforeend", fecha_nacimiento);
                 info.insertAdjacentHTML("beforeend", genero);
