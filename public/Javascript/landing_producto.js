@@ -9,6 +9,12 @@ image_input.addEventListener("change", function () {
     reader.readAsDataURL(this.files[0]);
 });
 
+function anadir2() {
+    var foto = document.getElementById("imagen_input").files[0].name;
+    console.log(foto)
+    var x = "hola";
+    console.log(x)
+}
 function anadir() {
     var correo = document.getElementById("email-registro").value;
     var nombre = document.getElementById("nombre").value;
@@ -16,7 +22,8 @@ function anadir() {
     var genero = document.getElementById("genero").value;
     var altura = document.getElementById("altura").value;
     var peso = document.getElementById("peso").value;
-    var foto = document.getElementById("imagen_input").value;
+    var foto = document.getElementById("imagen_input").files[0].name;
+    var dir = "../Media/fotos/" + foto;
     if(correo.length === 0 || nombre.length === 0 || fecha_nacimiento.length === 0 || genero.length === 0 || altura.length === 0 || peso.length === 0 || foto.length === 0){
         alert("Porfavor llene todos los espacios");
     } else {
@@ -27,7 +34,7 @@ function anadir() {
             genero: document.getElementById("genero").value,
             altura: document.getElementById("altura").value,
             peso: document.getElementById("peso").value,
-            foto: document.getElementById("imagen_input").value
+            foto: dir
         }
         fetch('http://localhost:5000/landing-producto/insertar', {
             method: "POST",
